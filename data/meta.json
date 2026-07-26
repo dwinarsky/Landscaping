@@ -1,0 +1,20 @@
+{
+  "project": "Pearson Residence",
+  "address": "13165 Ten Oak Court, Saratoga, CA",
+  "designer": "Landworks Inc.",
+  "designerTagline": "Custom Landscape Design and Installation",
+  "designerPhone": "(408) 341-0555",
+  "license": "DLD",
+  "drawnBy": "DS",
+  "date": "December 2001",
+  "revision": "7-23-02",
+  "job": "PEARSON",
+  "scale": "1/8\" = 1'-0\"",
+  "sheetSet": "7 sheets total; sheets 3 and 4 are the planting plans and the only two available here.",
+  "planNotes": [
+    "These plans were derived from: A. Landworks measurements  B. House plans supplied by owner",
+    "These plans are for Landworks use only. We are not professional surveyors and intend these plans only as an approximation of actual site conditions and as a guide for new construction."
+  ],
+  "disclaimer": "This map is a digitization of a paper plan drawn in December 2001 and revised July 2002. It records the design intent at that time, not necessarily what is growing in the yard today. Bed outlines are traced from a photograph of the paper drawing and are approximate; the original plan carries the same caveat.",
+  "curatedFieldsNote": "Botanical name, common name, quantity, container size and remarks are transcribed verbatim from the blueprint's plant legend. Plant type, mature size, sun, water, bloom season and the descriptive notes are added horticultural context and do not appear on the blueprint."
+}

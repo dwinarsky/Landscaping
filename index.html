@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="theme-color" content="#191a22">
+<title>Pearson Residence Landscape Plan &mdash; 13165 Ten Oak Court</title>
+<meta name="description" content="Interactive planting plan for 13165 Ten Oak Court, Saratoga. Tap any garden area or plant callout to see what is planted there and what it looks like.">
+<link rel="stylesheet" href="css/app.css">
+<!-- Inline so the page needs no network at all: the plan's own callout hexagon. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M10 4h12l6 12-6 12H10L4 16z' fill='none' stroke='%235866c9' stroke-width='2.5'/%3E%3Cpath d='M5 16h22' stroke='%235866c9' stroke-width='2.5'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-id">
+    <span class="topbar-project">Pearson Residence</span>
+    <span class="topbar-addr">13165 Ten Oak Court, Saratoga</span>
+  </div>
+
+  <div class="sheetpick" role="tablist" aria-label="Choose a plan sheet">
+    <!-- filled by app.js -->
+  </div>
+
+  <div class="topbar-actions">
+    <button type="button" class="iconbtn" id="btn-search" aria-label="Search plants" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+    </button>
+    <button type="button" class="iconbtn" id="btn-areas" aria-label="List garden areas" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    </button>
+    <button type="button" class="iconbtn" id="btn-about" aria-label="About this plan">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v6M12 7.6v.9"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="searchbar" id="searchbar" hidden>
+  <input type="search" id="search-input" placeholder="Search by name, or plant key (AA, LM&hellip;)"
+         autocomplete="off" spellcheck="false" aria-label="Search plants">
+  <div class="searchresults" id="search-results" role="listbox"></div>
+</div>
+
+<main class="map" id="map">
+  <div class="stage" id="stage">
+    <img id="plan-img" alt="" draggable="false" decoding="async">
+    <svg id="overlay" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g id="zone-layer"></g>
+      <g id="marker-layer"></g>
+    </svg>
+  </div>
+
+  <div class="mapctl">
+    <button type="button" class="iconbtn ctl" id="btn-zoomin" aria-label="Zoom in">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg>
+    </button>
+    <button type="button" class="iconbtn ctl" id="btn-zoomout" aria-label="Zoom out">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12"/></svg>
+    </button>
+    <button type="button" class="iconbtn ctl" id="btn-fit" aria-label="Fit plan to screen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M15 20h5v-5M9 20H4v-5"/></svg>
+    </button>
+    <button type="button" class="iconbtn ctl" id="btn-full" aria-label="Show the whole sheet including the legend" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M13 5.5v13"/></svg>
+    </button>
+  </div>
+
+  <p class="hint" id="hint">Tap an area of the plan, or a hexagon, to see what is planted there.</p>
+</main>
+
+<aside class="panel" id="panel" aria-live="polite">
+  <button type="button" class="panel-grab" id="panel-grab" aria-label="Collapse panel"><span></span></button>
+  <div class="panel-body" id="panel-body"></div>
+</aside>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

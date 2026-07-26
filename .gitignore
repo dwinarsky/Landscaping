@@ -1,0 +1,12 @@
+# Working files produced by tools/, not needed to serve the site.
+# _work-full.png is the full-resolution rectified plan used for shape detection
+# and zone cropping; regenerate it with tools/prepare_plan.py.
+images/*/_work-full.png
+images/*/_debug-*.jpg
+images/*/_contact/
+dist/
+
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/

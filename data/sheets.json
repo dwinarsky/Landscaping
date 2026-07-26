@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sheet-03-front",
+    "label": "Front Yard",
+    "sheetNumber": "3 of 7",
+    "title": "Landscape Plan - Front Yard",
+    "width": 4020,
+    "height": 2815,
+    "rotation": 270,
+    "source": "images/source/sheet-03-front.jpeg",
+    "plan": "images/sheet-03-front/plan",
+    "plantTotal": 281,
+    "speciesCount": 41,
+    "defaultView": {
+      "x": 180,
+      "y": 200,
+      "width": 2340,
+      "height": 2500
+    },
+    "description": "Street frontage on Ten Oak Court, the entry walk, foundation beds around the existing residence, a sod lawn, and the borders along both wood fences.",
+    "variants": [
+      1024,
+      2048,
+      4020
+    ],
+    "mapped": true
+  },
+  {
+    "id": "sheet-04-back",
+    "label": "Back Yard",
+    "sheetNumber": "4 of 7",
+    "title": "Landscape Plan - Back Yard",
+    "width": 4028,
+    "height": 2783,
+    "rotation": 90,
+    "source": "images/source/sheet-04-back.jpeg",
+    "plan": "images/sheet-04-back/plan",
+    "plantTotal": 258,
+    "speciesCount": 36,
+    "defaultView": {
+      "x": 140,
+      "y": 300,
+      "width": 2360,
+      "height": 2350
+    },
+    "description": "The existing pool and aggregate-concrete terrace, a sod lawn, rose plantings, the oak and pine canopies along the rear property line, and the flower-box terrace by the shed.",
+    "variants": [
+      1024,
+      2048,
+      4028
+    ],
+    "mapped": false
+  }
+]

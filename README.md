@@ -1,0 +1,154 @@
+# Pearson Residence — interactive landscape plan
+
+An interactive map of the planting plan for **13165 Ten Oak Court, Saratoga, CA**, drawn by
+Landworks Inc. in December 2001 and revised July 2002.
+
+The plan only exists on paper. This turns a photograph of it into something usable in the garden:
+pan and zoom the drawing, tap a bed to see everything planted there, or tap an individual hexagon
+callout to see what goes at that exact spot and what it looks like grown.
+
+No framework, no build step, no runtime dependencies — `index.html` plus vanilla ES modules and
+JSON. Python under `tools/` is offline tooling used to produce the data, never at runtime.
+
+## Run it locally
+
+```sh
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
+
+It must be served over HTTP; opening `index.html` from the filesystem fails because ES modules and
+`fetch` are blocked on `file://`.
+
+## What is mapped
+
+| Sheet | Area | Species | Plants | Callouts | Areas |
+|-------|------|---------|--------|----------|-------|
+| 3 of 7 | Front yard | 41 | 281 | 91 | 11 |
+| 4 of 7 | Back yard | 36 | 258 | not yet mapped | — |
+
+Sheets 1, 2, 5, 6 and 7 (irrigation, lighting, grading and construction details) were not
+photographed and are not included. The data model handles any number of sheets — adding one is a
+data-only change.
+
+### Plant keys are scoped per sheet
+
+The two sheets reuse the same two-letter keys for **different plants**:
+
+| Key | Front yard | Back yard |
+|-----|------------|-----------|
+| `AA` | *Agapanthus africanus*, 21 | *Agapanthus africanus* **'Blue'**, 45 |
+| `HA` | *Hemerocallis* 'Aztec Gold' (day lily), 11 | ***Heteromeles arbutifolia*** (Toyon), 1 |
+| `BT` | *Berberis thu.* **'Crimson Pygmy'**, 6 | *Berberis thu.* **'Atropurpurea'**, 1 |
+
+Nineteen keys appear on both sheets and eighteen of them mean something different. There is
+deliberately no global key lookup anywhere in the code — `data.js` builds one table per sheet, and
+`tools/validate.py` asserts the collisions still exist so the two legends can never be merged by
+accident.
+
+## How the data was produced
+
+Everything runs through `tools/`, in this order.
+
+```sh
+python3 -m pip install -r requirements.txt
+
+# 1. Flatten the phone photo into a square-on plan image.
+python3 tools/prepare_plan.py --sheet sheet-03-front --rotate 270
+
+# 2. Find the hexagon callouts on the drawing.
+python3 tools/detect_callouts.py --sheet sheet-03-front --region 0,150,2520,2665
+
+# 3. Render them magnified so the keys and counts can be read.
+python3 tools/contact_sheet.py --sheet sheet-03-front
+
+# 4. Turn those readings into callouts.json.
+python3 tools/build_callouts.py --sheet sheet-03-front
+
+# 5. Crop a zoomed view of the plan for each garden area.
+python3 tools/crop_zones.py --sheet sheet-03-front
+
+# 6. Fetch one openly-licensed photo per species.
+python3 tools/fetch_plant_photos.py
+
+# 7. Check it all against the blueprint's own arithmetic.
+python3 tools/validate.py
+```
+
+### The coordinate system
+
+`prepare_plan.py` detects the sheet of paper against the carpet (by saturation — brightness alone
+cannot separate aged paper from tan carpet), perspective-warps it flat, evens out the lighting, and
+emits WebP rasters. The dimensions of that rectified image define **the one coordinate space used
+everywhere**: zone polygons, callout positions, and the SVG `viewBox` are all in its pixels. Re-run
+`prepare_plan.py` with different arguments and every coordinate in `data/` shifts, so don't.
+
+### Reading the callouts
+
+Contour analysis cannot isolate the hexagons — every one is fused to its leader line, so the
+outline is never a closed contour. Detection instead template-matches a synthetic hexagon with the
+interior masked out, then verifies each candidate structurally by looking for the three horizontal
+rules a real callout has (flat top edge, full-width divider, flat bottom edge).
+
+The keys and counts themselves are read by eye off `contact_sheet.py` output and recorded in
+`tools/build_callouts.py`. No OCR engine is available here, and the stylized lettering defeats the
+ones that are.
+
+### The legend is a checksum
+
+The plant legend states a quantity per key; the drawing states a count per callout. Those must
+agree, per key and in total, which turns 41 legend rows into a checksum over 91 hand-read hexagons.
+`tools/validate.py` enforces it — the front yard reconciles exactly at **281 plants**. That is how
+the one callout the detector missed (`RF/4`, alone at the far west edge) was found: it showed up as
+a four-plant shortfall on one key.
+
+## Things the data records honestly
+
+- **`MA` vs `MY`.** The drawing labels every *Myrsine africana* callout `MA`, but the legend splits
+  the species into `MA` (4 plants, 5 gallon) and `MY` (22, 1 gallon). The three `MA` callouts total
+  26 — exactly 4 + 22. The `MA/10` and `MA/12` callouts are taken as the 22 one-gallon plants; that
+  split is inferred, is marked `inferred: true` in `callouts.json`, and is shown as a caveat in the
+  app.
+- **Area outlines are approximate.** They are traced over a photograph of a paper drawing. The
+  blueprint carries the same caveat itself: *"We are not professional surveyors and intend these
+  plans only as an approximation of actual site conditions."*
+- **Growing notes are mine, not the designer's.** Botanical name, common name, quantity, container
+  size and remarks are transcribed verbatim. Plant type, mature size, sun, water, bloom season and
+  the descriptive prose are added context, labelled as such in the app.
+- **Some photos show the species, not the cultivar.** Wikimedia often has no photo of a specific
+  cultivar. Those are flagged in `CREDITS.json` and captioned accordingly rather than implying a
+  match. Nothing is substituted with a wrong plant.
+- **The plan is from 2001.** It records design intent, not what is alive in the garden today.
+
+## Editing the map
+
+Open with `?edit=1` to drag area outlines and callout markers, then copy the corrected JSON back
+into `data/`. Useful because the outlines are a tracing and the marker positions come from shape
+detection — both are close, neither is authoritative.
+
+Other URL parameters, all shareable:
+
+```
+?sheet=sheet-03-front
+?sheet=sheet-03-front&zone=lawn-and-magnolia
+?sheet=sheet-03-front&plant=LM
+```
+
+## Adding your own photos
+
+Drop a file at `images/plants/<species-slug>-mine.jpg` and the app prefers it over the Wikimedia
+one — handy for photographing what is actually growing in the garden now.
+
+## Deploying
+
+`.github/workflows/pages.yml` validates the data and publishes the repository root to GitHub Pages.
+**Set Pages source to "GitHub Actions"** in the repository settings once; after that every push
+deploys. The validation step gates the deploy, so a broken transcription cannot ship.
+
+## Photo credits
+
+Plant photographs come from Wikimedia Commons under CC0, CC BY and CC BY-SA licences. Author,
+licence and source URL for every photo are in `images/plants/CREDITS.json` and are shown beneath
+each photo and on the About page in the app.
+
+The blueprint itself is © Landworks Inc., 2001.

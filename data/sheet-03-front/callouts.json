@@ -1,0 +1,1278 @@
+[
+ {
+  "id": "f001",
+  "key": "OF",
+  "count": 1,
+  "x": 1853,
+  "y": 593,
+  "bbox": [
+   1830,
+   570,
+   46,
+   46
+  ],
+  "candidate": 1
+ },
+ {
+  "id": "f002",
+  "key": "PW",
+  "count": 5,
+  "x": 1121,
+  "y": 640,
+  "bbox": [
+   1098,
+   617,
+   46,
+   46
+  ],
+  "candidate": 2
+ },
+ {
+  "id": "f003",
+  "key": "HH",
+  "count": 1,
+  "x": 2349,
+  "y": 645,
+  "bbox": [
+   2326,
+   622,
+   46,
+   46
+  ],
+  "candidate": 3
+ },
+ {
+  "id": "f004",
+  "key": "DA",
+  "count": 1,
+  "x": 1434,
+  "y": 701,
+  "bbox": [
+   1411,
+   678,
+   46,
+   46
+  ],
+  "candidate": 6
+ },
+ {
+  "id": "f005",
+  "key": "DB",
+  "count": 2,
+  "x": 1359,
+  "y": 705,
+  "bbox": [
+   1336,
+   682,
+   46,
+   46
+  ],
+  "candidate": 7
+ },
+ {
+  "id": "f006",
+  "key": "MA",
+  "count": 10,
+  "x": 1166,
+  "y": 706,
+  "bbox": [
+   1143,
+   683,
+   46,
+   46
+  ],
+  "candidate": 8,
+  "resolvedKey": "MY",
+  "inferred": true,
+  "ambiguityNote": "The drawing labels every Myrsine africana callout 'MA', but the legend splits the species into MA (4 plants, 5 gallon) and MY (22 plants, 1 gallon). The three MA callouts total 26, which is exactly 4 + 22. The MA/4 callout is taken as the 5-gallon group and the MA/10 and MA/12 callouts as the 22 one-gallon plants. That split is inferred, not stated on the sheet."
+ },
+ {
+  "id": "f007",
+  "key": "AA",
+  "count": 1,
+  "x": 1856,
+  "y": 711,
+  "bbox": [
+   1833,
+   688,
+   46,
+   46
+  ],
+  "candidate": 9
+ },
+ {
+  "id": "f008",
+  "key": "GI",
+  "count": 4,
+  "x": 1668,
+  "y": 721,
+  "bbox": [
+   1645,
+   698,
+   46,
+   46
+  ],
+  "candidate": 10
+ },
+ {
+  "id": "f009",
+  "key": "LS",
+  "count": 1,
+  "x": 2326,
+  "y": 736,
+  "bbox": [
+   2303,
+   713,
+   46,
+   46
+  ],
+  "candidate": 11
+ },
+ {
+  "id": "f010",
+  "key": "PW",
+  "count": 1,
+  "x": 1715,
+  "y": 759,
+  "bbox": [
+   1692,
+   736,
+   46,
+   46
+  ],
+  "candidate": 13
+ },
+ {
+  "id": "f011",
+  "key": "PM",
+  "count": 1,
+  "x": 693,
+  "y": 761,
+  "bbox": [
+   670,
+   738,
+   46,
+   46
+  ],
+  "candidate": 14
+ },
+ {
+  "id": "f012",
+  "key": "RC",
+  "count": 1,
+  "x": 801,
+  "y": 785,
+  "bbox": [
+   778,
+   762,
+   46,
+   46
+  ],
+  "candidate": 15
+ },
+ {
+  "id": "f013",
+  "key": "GS",
+  "count": 1,
+  "x": 2320,
+  "y": 803,
+  "bbox": [
+   2297,
+   780,
+   46,
+   46
+  ],
+  "candidate": 16
+ },
+ {
+  "id": "f014",
+  "key": "PM",
+  "count": 1,
+  "x": 1841,
+  "y": 805,
+  "bbox": [
+   1818,
+   782,
+   46,
+   46
+  ],
+  "candidate": 17
+ },
+ {
+  "id": "f015",
+  "key": "AP",
+  "count": 3,
+  "x": 692,
+  "y": 811,
+  "bbox": [
+   669,
+   788,
+   46,
+   46
+  ],
+  "candidate": 18
+ },
+ {
+  "id": "f016",
+  "key": "AB",
+  "count": 1,
+  "x": 1679,
+  "y": 837,
+  "bbox": [
+   1656,
+   814,
+   46,
+   46
+  ],
+  "candidate": 25
+ },
+ {
+  "id": "f017",
+  "bbox": null,
+  "candidate": null,
+  "key": "RF",
+  "count": 4,
+  "x": 255,
+  "y": 863,
+  "note": "Missed by shape detection - it sits alone at the far west edge of the sheet. Found by chasing the RF shortfall in the checksum."
+ },
+ {
+  "id": "f018",
+  "key": "TJ",
+  "count": 2,
+  "x": 1834,
+  "y": 870,
+  "bbox": [
+   1811,
+   847,
+   46,
+   46
+  ],
+  "candidate": 29
+ },
+ {
+  "id": "f019",
+  "key": "AA",
+  "count": 5,
+  "x": 2350,
+  "y": 870,
+  "bbox": [
+   2327,
+   847,
+   46,
+   46
+  ],
+  "candidate": 30
+ },
+ {
+  "id": "f020",
+  "key": "MP",
+  "count": 3,
+  "x": 804,
+  "y": 891,
+  "bbox": [
+   781,
+   868,
+   46,
+   46
+  ],
+  "candidate": 31
+ },
+ {
+  "id": "f021",
+  "key": "RC",
+  "count": 1,
+  "x": 1225,
+  "y": 892,
+  "bbox": [
+   1202,
+   869,
+   46,
+   46
+  ],
+  "candidate": 32
+ },
+ {
+  "id": "f022",
+  "key": "AP",
+  "count": 1,
+  "x": 1379,
+  "y": 900,
+  "bbox": [
+   1356,
+   877,
+   46,
+   46
+  ],
+  "candidate": 33
+ },
+ {
+  "id": "f023",
+  "key": "LS",
+  "count": 2,
+  "x": 1728,
+  "y": 907,
+  "bbox": [
+   1705,
+   884,
+   46,
+   46
+  ],
+  "candidate": 34
+ },
+ {
+  "id": "f024",
+  "key": "AP",
+  "count": 3,
+  "x": 1434,
+  "y": 917,
+  "bbox": [
+   1411,
+   894,
+   46,
+   46
+  ],
+  "candidate": 35
+ },
+ {
+  "id": "f025",
+  "key": "CO",
+  "count": 4,
+  "x": 2350,
+  "y": 920,
+  "bbox": [
+   2327,
+   897,
+   46,
+   46
+  ],
+  "candidate": 36
+ },
+ {
+  "id": "f026",
+  "key": "LN",
+  "count": 3,
+  "x": 691,
+  "y": 925,
+  "bbox": [
+   668,
+   902,
+   46,
+   46
+  ],
+  "candidate": 37
+ },
+ {
+  "id": "f027",
+  "key": "CP",
+  "count": 4,
+  "x": 1045,
+  "y": 959,
+  "bbox": [
+   1022,
+   936,
+   46,
+   46
+  ],
+  "candidate": 38
+ },
+ {
+  "id": "f028",
+  "key": "BT",
+  "count": 3,
+  "x": 1409,
+  "y": 972,
+  "bbox": [
+   1386,
+   949,
+   46,
+   46
+  ],
+  "candidate": 40
+ },
+ {
+  "id": "f029",
+  "key": "MA",
+  "count": 4,
+  "x": 1715,
+  "y": 979,
+  "bbox": [
+   1692,
+   956,
+   46,
+   46
+  ],
+  "candidate": 41
+ },
+ {
+  "id": "f030",
+  "key": "AB",
+  "count": 1,
+  "x": 690,
+  "y": 980,
+  "bbox": [
+   667,
+   957,
+   46,
+   46
+  ],
+  "candidate": 42
+ },
+ {
+  "id": "f031",
+  "key": "AP",
+  "count": 3,
+  "x": 1322,
+  "y": 995,
+  "bbox": [
+   1299,
+   972,
+   46,
+   46
+  ],
+  "candidate": 43
+ },
+ {
+  "id": "f032",
+  "key": "PW",
+  "count": 1,
+  "x": 1675,
+  "y": 1016,
+  "bbox": [
+   1652,
+   993,
+   46,
+   46
+  ],
+  "candidate": 44
+ },
+ {
+  "id": "f033",
+  "key": "CC",
+  "count": 1,
+  "x": 2293,
+  "y": 1026,
+  "bbox": [
+   2270,
+   1003,
+   46,
+   46
+  ],
+  "candidate": 45
+ },
+ {
+  "id": "f034",
+  "key": "ND",
+  "count": 1,
+  "x": 1305,
+  "y": 1054,
+  "bbox": [
+   1282,
+   1031,
+   46,
+   46
+  ],
+  "candidate": 47
+ },
+ {
+  "id": "f035",
+  "key": "HM",
+  "count": 6,
+  "x": 1707,
+  "y": 1085,
+  "bbox": [
+   1684,
+   1062,
+   46,
+   46
+  ],
+  "candidate": 48
+ },
+ {
+  "id": "f036",
+  "key": "LM",
+  "count": 4,
+  "x": 1028,
+  "y": 1093,
+  "bbox": [
+   1005,
+   1070,
+   46,
+   46
+  ],
+  "candidate": 49
+ },
+ {
+  "id": "f037",
+  "key": "MA",
+  "count": 12,
+  "x": 328,
+  "y": 1105,
+  "bbox": [
+   305,
+   1082,
+   46,
+   46
+  ],
+  "candidate": 50,
+  "resolvedKey": "MY",
+  "inferred": true,
+  "ambiguityNote": "The drawing labels every Myrsine africana callout 'MA', but the legend splits the species into MA (4 plants, 5 gallon) and MY (22 plants, 1 gallon). The three MA callouts total 26, which is exactly 4 + 22. The MA/4 callout is taken as the 5-gallon group and the MA/10 and MA/12 callouts as the 22 one-gallon plants. That split is inferred, not stated on the sheet."
+ },
+ {
+  "id": "f038",
+  "key": "AP",
+  "count": 3,
+  "x": 1324,
+  "y": 1106,
+  "bbox": [
+   1301,
+   1083,
+   46,
+   46
+  ],
+  "candidate": 51
+ },
+ {
+  "id": "f039",
+  "key": "PS",
+  "count": 1,
+  "x": 1660,
+  "y": 1116,
+  "bbox": [
+   1637,
+   1093,
+   46,
+   46
+  ],
+  "candidate": 52
+ },
+ {
+  "id": "f040",
+  "key": "BT",
+  "count": 3,
+  "x": 1280,
+  "y": 1142,
+  "bbox": [
+   1257,
+   1119,
+   46,
+   46
+  ],
+  "candidate": 53
+ },
+ {
+  "id": "f041",
+  "key": "AH",
+  "count": 1,
+  "x": 1725,
+  "y": 1147,
+  "bbox": [
+   1702,
+   1124,
+   46,
+   46
+  ],
+  "candidate": 54
+ },
+ {
+  "id": "f042",
+  "key": "LN",
+  "count": 5,
+  "x": 1102,
+  "y": 1155,
+  "bbox": [
+   1079,
+   1132,
+   46,
+   46
+  ],
+  "candidate": 55
+ },
+ {
+  "id": "f043",
+  "key": "ND",
+  "count": 1,
+  "x": 1282,
+  "y": 1193,
+  "bbox": [
+   1259,
+   1170,
+   46,
+   46
+  ],
+  "candidate": 56
+ },
+ {
+  "id": "f044",
+  "key": "GN",
+  "count": 5,
+  "x": 1707,
+  "y": 1203,
+  "bbox": [
+   1684,
+   1180,
+   46,
+   46
+  ],
+  "candidate": 57
+ },
+ {
+  "id": "f045",
+  "key": "ND",
+  "count": 8,
+  "x": 384,
+  "y": 1204,
+  "bbox": [
+   361,
+   1181,
+   46,
+   46
+  ],
+  "candidate": 58
+ },
+ {
+  "id": "f046",
+  "key": "AA",
+  "count": 1,
+  "x": 2281,
+  "y": 1204,
+  "bbox": [
+   2258,
+   1181,
+   46,
+   46
+  ],
+  "candidate": 59
+ },
+ {
+  "id": "f047",
+  "key": "RC",
+  "count": 1,
+  "x": 1238,
+  "y": 1225,
+  "bbox": [
+   1215,
+   1202,
+   46,
+   46
+  ],
+  "candidate": 60
+ },
+ {
+  "id": "f048",
+  "key": "AU",
+  "count": 1,
+  "x": 1754,
+  "y": 1243,
+  "bbox": [
+   1731,
+   1220,
+   46,
+   46
+  ],
+  "candidate": 61
+ },
+ {
+  "id": "f049",
+  "key": "GS",
+  "count": 1,
+  "x": 448,
+  "y": 1251,
+  "bbox": [
+   425,
+   1228,
+   46,
+   46
+  ],
+  "candidate": 62
+ },
+ {
+  "id": "f050",
+  "key": "AH",
+  "count": 1,
+  "x": 2305,
+  "y": 1275,
+  "bbox": [
+   2282,
+   1252,
+   46,
+   46
+  ],
+  "candidate": 63
+ },
+ {
+  "id": "f051",
+  "key": "GN",
+  "count": 2,
+  "x": 933,
+  "y": 1300,
+  "bbox": [
+   910,
+   1277,
+   46,
+   46
+  ],
+  "candidate": 64
+ },
+ {
+  "id": "f052",
+  "key": "DB",
+  "count": 1,
+  "x": 1184,
+  "y": 1309,
+  "bbox": [
+   1161,
+   1286,
+   46,
+   46
+  ],
+  "candidate": 65
+ },
+ {
+  "id": "f053",
+  "key": "XC",
+  "count": 1,
+  "x": 2279,
+  "y": 1375,
+  "bbox": [
+   2256,
+   1352,
+   46,
+   46
+  ],
+  "candidate": 67
+ },
+ {
+  "id": "f054",
+  "key": "HA",
+  "count": 11,
+  "x": 1104,
+  "y": 1376,
+  "bbox": [
+   1081,
+   1353,
+   46,
+   46
+  ],
+  "candidate": 68
+ },
+ {
+  "id": "f055",
+  "key": "DB",
+  "count": 1,
+  "x": 954,
+  "y": 1379,
+  "bbox": [
+   931,
+   1356,
+   46,
+   46
+  ],
+  "candidate": 69
+ },
+ {
+  "id": "f056",
+  "key": "AA",
+  "count": 2,
+  "x": 2276,
+  "y": 1431,
+  "bbox": [
+   2253,
+   1408,
+   46,
+   46
+  ],
+  "candidate": 71
+ },
+ {
+  "id": "f057",
+  "key": "HH",
+  "count": 1,
+  "x": 545,
+  "y": 1441,
+  "bbox": [
+   522,
+   1418,
+   46,
+   46
+  ],
+  "candidate": 72
+ },
+ {
+  "id": "f058",
+  "key": "LN",
+  "count": 3,
+  "x": 2293,
+  "y": 1487,
+  "bbox": [
+   2270,
+   1464,
+   46,
+   46
+  ],
+  "candidate": 75
+ },
+ {
+  "id": "f059",
+  "key": "GI",
+  "count": 6,
+  "x": 1208,
+  "y": 1505,
+  "bbox": [
+   1185,
+   1482,
+   46,
+   46
+  ],
+  "candidate": 76
+ },
+ {
+  "id": "f060",
+  "key": "ND",
+  "count": 3,
+  "x": 1504,
+  "y": 1524,
+  "bbox": [
+   1481,
+   1501,
+   46,
+   46
+  ],
+  "candidate": 77
+ },
+ {
+  "id": "f061",
+  "key": "PH",
+  "count": 1,
+  "x": 1635,
+  "y": 1536,
+  "bbox": [
+   1612,
+   1513,
+   46,
+   46
+  ],
+  "candidate": 78
+ },
+ {
+  "id": "f062",
+  "key": "OD",
+  "count": 4,
+  "x": 1399,
+  "y": 1562,
+  "bbox": [
+   1376,
+   1539,
+   46,
+   46
+  ],
+  "candidate": 79
+ },
+ {
+  "id": "f063",
+  "key": "MF",
+  "count": 5,
+  "x": 2296,
+  "y": 1573,
+  "bbox": [
+   2273,
+   1550,
+   46,
+   46
+  ],
+  "candidate": 80
+ },
+ {
+  "id": "f064",
+  "key": "HM",
+  "count": 1,
+  "x": 1529,
+  "y": 1597,
+  "bbox": [
+   1506,
+   1574,
+   46,
+   46
+  ],
+  "candidate": 81
+ },
+ {
+  "id": "f065",
+  "key": "AH",
+  "count": 1,
+  "x": 610,
+  "y": 1600,
+  "bbox": [
+   587,
+   1577,
+   46,
+   46
+  ],
+  "candidate": 82
+ },
+ {
+  "id": "f066",
+  "key": "ND",
+  "count": 4,
+  "x": 1620,
+  "y": 1601,
+  "bbox": [
+   1597,
+   1578,
+   46,
+   46
+  ],
+  "candidate": 83
+ },
+ {
+  "id": "f067",
+  "key": "BA",
+  "count": 9,
+  "x": 2295,
+  "y": 1632,
+  "bbox": [
+   2272,
+   1609,
+   46,
+   46
+  ],
+  "candidate": 84
+ },
+ {
+  "id": "f068",
+  "key": "OD",
+  "count": 2,
+  "x": 715,
+  "y": 1635,
+  "bbox": [
+   692,
+   1612,
+   46,
+   46
+  ],
+  "candidate": 85
+ },
+ {
+  "id": "f069",
+  "key": "HM",
+  "count": 3,
+  "x": 1278,
+  "y": 1644,
+  "bbox": [
+   1255,
+   1621,
+   46,
+   46
+  ],
+  "candidate": 86
+ },
+ {
+  "id": "f070",
+  "key": "XC",
+  "count": 1,
+  "x": 757,
+  "y": 1691,
+  "bbox": [
+   734,
+   1668,
+   46,
+   46
+  ],
+  "candidate": 87
+ },
+ {
+  "id": "f071",
+  "key": "RO",
+  "count": 8,
+  "x": 2295,
+  "y": 1691,
+  "bbox": [
+   2272,
+   1668,
+   46,
+   46
+  ],
+  "candidate": 88
+ },
+ {
+  "id": "f072",
+  "key": "CE",
+  "count": 1,
+  "x": 1251,
+  "y": 1704,
+  "bbox": [
+   1228,
+   1681,
+   46,
+   46
+  ],
+  "candidate": 89
+ },
+ {
+  "id": "f073",
+  "key": "PH",
+  "count": 1,
+  "x": 706,
+  "y": 1726,
+  "bbox": [
+   683,
+   1703,
+   46,
+   46
+  ],
+  "candidate": 90
+ },
+ {
+  "id": "f074",
+  "key": "RO",
+  "count": 1,
+  "x": 1235,
+  "y": 1768,
+  "bbox": [
+   1212,
+   1745,
+   46,
+   46
+  ],
+  "candidate": 91
+ },
+ {
+  "id": "f075",
+  "key": "MF",
+  "count": 1,
+  "x": 678,
+  "y": 1789,
+  "bbox": [
+   655,
+   1766,
+   46,
+   46
+  ],
+  "candidate": 92
+ },
+ {
+  "id": "f076",
+  "key": "BA",
+  "count": 5,
+  "x": 719,
+  "y": 1840,
+  "bbox": [
+   696,
+   1817,
+   46,
+   46
+  ],
+  "candidate": 93
+ },
+ {
+  "id": "f077",
+  "key": "LM",
+  "count": 9,
+  "x": 1797,
+  "y": 1856,
+  "bbox": [
+   1774,
+   1833,
+   46,
+   46
+  ],
+  "candidate": 94
+ },
+ {
+  "id": "f078",
+  "key": "CE",
+  "count": 2,
+  "x": 1874,
+  "y": 1889,
+  "bbox": [
+   1851,
+   1866,
+   46,
+   46
+  ],
+  "candidate": 95
+ },
+ {
+  "id": "f079",
+  "key": "PT",
+  "count": 8,
+  "x": 2333,
+  "y": 1895,
+  "bbox": [
+   2310,
+   1872,
+   46,
+   46
+  ],
+  "candidate": 96
+ },
+ {
+  "id": "f080",
+  "key": "PH",
+  "count": 1,
+  "x": 1873,
+  "y": 1958,
+  "bbox": [
+   1850,
+   1935,
+   46,
+   46
+  ],
+  "candidate": 97
+ },
+ {
+  "id": "f081",
+  "key": "PV",
+  "count": 5,
+  "x": 2342,
+  "y": 1968,
+  "bbox": [
+   2319,
+   1945,
+   46,
+   46
+  ],
+  "candidate": 98
+ },
+ {
+  "id": "f082",
+  "key": "MS",
+  "count": 1,
+  "x": 1510,
+  "y": 1980,
+  "bbox": [
+   1487,
+   1957,
+   46,
+   46
+  ],
+  "candidate": 99
+ },
+ {
+  "id": "f083",
+  "key": "HM",
+  "count": 5,
+  "x": 863,
+  "y": 2046,
+  "bbox": [
+   840,
+   2023,
+   46,
+   46
+  ],
+  "candidate": 100
+ },
+ {
+  "id": "f084",
+  "key": "PW",
+  "count": 1,
+  "x": 1342,
+  "y": 2078,
+  "bbox": [
+   1319,
+   2055,
+   46,
+   46
+  ],
+  "candidate": 101
+ },
+ {
+  "id": "f085",
+  "key": "AA",
+  "count": 3,
+  "x": 892,
+  "y": 2109,
+  "bbox": [
+   869,
+   2086,
+   46,
+   46
+  ],
+  "candidate": 102
+ },
+ {
+  "id": "f086",
+  "key": "CE",
+  "count": 1,
+  "x": 1456,
+  "y": 2237,
+  "bbox": [
+   1433,
+   2214,
+   46,
+   46
+  ],
+  "candidate": 104
+ },
+ {
+  "id": "f087",
+  "key": "LN",
+  "count": 2,
+  "x": 988,
+  "y": 2267,
+  "bbox": [
+   965,
+   2244,
+   46,
+   46
+  ],
+  "candidate": 105
+ },
+ {
+  "id": "f088",
+  "key": "AA",
+  "count": 9,
+  "x": 2418,
+  "y": 2320,
+  "bbox": [
+   2395,
+   2297,
+   46,
+   46
+  ],
+  "candidate": 106
+ },
+ {
+  "id": "f089",
+  "key": "BA",
+  "count": 3,
+  "x": 2365,
+  "y": 2409,
+  "bbox": [
+   2342,
+   2386,
+   46,
+   46
+  ],
+  "candidate": 107
+ },
+ {
+  "id": "f090",
+  "key": "CP",
+  "count": 3,
+  "x": 1827,
+  "y": 2463,
+  "bbox": [
+   1804,
+   2440,
+   46,
+   46
+  ],
+  "candidate": 108
+ },
+ {
+  "id": "f091",
+  "key": "LM",
+  "count": 14,
+  "x": 1886,
+  "y": 2526,
+  "bbox": [
+   1863,
+   2503,
+   46,
+   46
+  ],
+  "candidate": 110
+ }
+]

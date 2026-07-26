@@ -1,0 +1,4 @@
+# Offline tooling for tools/ only. The site itself has no dependencies.
+pillow>=10
+opencv-python-headless>=4.9
+numpy>=1.26
