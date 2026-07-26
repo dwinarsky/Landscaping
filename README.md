@@ -155,9 +155,15 @@ one — handy for photographing what is actually growing in the garden now.
 
 ## Deploying
 
-`.github/workflows/pages.yml` validates the data and publishes the repository root to GitHub Pages.
-**Set Pages source to "GitHub Actions"** in the repository settings once; after that every push
-deploys. The validation step gates the deploy, so a broken transcription cannot ship.
+Live at **https://dwinarsky.github.io/Landscaping/**.
+
+`.github/workflows/pages.yml` validates the data and publishes the repository root to GitHub Pages
+(Pages source is set to "GitHub Actions"). Every push deploys, and the validation step gates the
+deploy so a broken transcription cannot ship.
+
+`.nojekyll` matters: without it Pages runs the repository through Jekyll, which silently drops
+every file whose name starts with `_` — including the `_callout-candidates.json` that
+`build_callouts.py` indexes into. Nothing at runtime loads those, but the 404s are confusing.
 
 ## Photo credits
 

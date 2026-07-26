@@ -4,6 +4,7 @@
 images/*/_work-full.png
 images/*/_debug-*.jpg
 images/*/_contact/
+data/*/_loose-candidates.json
 dist/
 
 __pycache__/
