@@ -50,9 +50,11 @@ def main() -> int:
                     help="extra source px around each hexagon")
     ap.add_argument("--only", help="1-based index list/ranges, e.g. 1-20,35")
     ap.add_argument("--out-dir", default=None)
+    ap.add_argument("--cand-file", default=None,
+                    help="alternate candidate file inside data/<sheet>/")
     args = ap.parse_args()
 
-    cand_path = ROOT / "data" / args.sheet / "_callout-candidates.json"
+    cand_path = ROOT / "data" / args.sheet / (args.cand_file or "_callout-candidates.json")
     cands = json.loads(cand_path.read_text())
     img = cv2.imread(str(ROOT / "images" / args.sheet / "_work-full.png"))
     if img is None:
@@ -93,8 +95,11 @@ def main() -> int:
         n = start // per + 1
         path = out_dir / f"contact-{n:02d}.png"
         cv2.imwrite(str(path), canvas)
-        print(f"  wrote {path.relative_to(ROOT)} "
-              f"(#{chunk[0] + 1}-#{chunk[-1] + 1})")
+        try:
+            shown = path.relative_to(ROOT)
+        except ValueError:
+            shown = path
+        print(f"  wrote {shown} (#{chunk[0] + 1}-#{chunk[-1] + 1})")
         sheets += 1
     print(f"{sheets} contact sheet(s) for {len(idxs)} candidates")
     return 0

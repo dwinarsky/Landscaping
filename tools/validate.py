@@ -83,6 +83,10 @@ def check_sheet(sheet: dict, errors: list[str], warnings: list[str]) -> None:
     drawn_total = sum(c["count"] for c in callouts)
     print(f"  drawing: {len(callouts)} callouts, {drawn_total} plants")
 
+    # A declared discrepancy is a gap we looked for, could not resolve, and wrote
+    # down. It downgrades to a warning so the gate still fails on anything new.
+    declared = {d["key"]: d for d in sheet.get("discrepancies", [])}
+
     bad = 0
     for key in sorted(set(by_key) | set(tally)):
         want = by_key[key]["qty"] if key in by_key else None
@@ -91,15 +95,24 @@ def check_sheet(sheet: dict, errors: list[str], warnings: list[str]) -> None:
             errors.append(f"{sid}: callouts use key '{key}' that is not in the legend")
             bad += 1
         elif want != got:
-            errors.append(f"{sid}: key {key} ({by_key[key]['common'] or by_key[key]['botanical']}) "
-                          f"- legend says {want}, callouts total {got}")
-            bad += 1
+            d = declared.get(key)
+            if d and d["legendQty"] == want and d["drawnQty"] == got:
+                warnings.append(f"{sid}: key {key} is a known, recorded gap - "
+                                f"legend {want}, drawing {got}")
+            else:
+                errors.append(f"{sid}: key {key} ({by_key[key]['common'] or by_key[key]['botanical']}) "
+                              f"- legend says {want}, callouts total {got}")
+                bad += 1
     if not bad:
-        print(f"  per-key checksum: all {len(by_key)} keys match")
-    if drawn_total != legend_total:
-        errors.append(f"{sid}: callouts total {drawn_total} but legend totals {legend_total}")
+        print(f"  per-key checksum: {len(by_key)} keys, "
+              f"{len(declared)} recorded gap(s), no unexplained mismatch")
+
+    gap = sum(d["legendQty"] - d["drawnQty"] for d in declared.values())
+    if drawn_total + gap != legend_total:
+        errors.append(f"{sid}: callouts total {drawn_total} (+{gap} recorded gap) "
+                      f"but legend totals {legend_total}")
     else:
-        print(f"  total checksum: {drawn_total} == {legend_total}")
+        print(f"  total checksum: {drawn_total} + {gap} recorded == {legend_total}")
 
     uncertain = [c["id"] for c in callouts if c.get("uncertain")]
     if uncertain:

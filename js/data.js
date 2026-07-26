@@ -13,9 +13,19 @@
 const INLINE = typeof window !== "undefined" ? window.__PLAN_DATA__ : null;
 const ASSETS = (typeof window !== "undefined" && window.__PLAN_ASSETS__) || null;
 
-/** Resolve a repo-relative asset path, honouring an inlined asset map. */
+/** Resolve a repo-relative asset path, honouring an inlined asset map.
+ *
+ * The single-file bundle ships one photo per species rather than both the full
+ * and thumbnail sizes, so a miss on the full size falls back to the thumbnail
+ * instead of embedding the same image twice.
+ */
 export function asset(path) {
-  if (ASSETS && Object.prototype.hasOwnProperty.call(ASSETS, path)) return ASSETS[path];
+  if (!ASSETS) return path;
+  if (Object.prototype.hasOwnProperty.call(ASSETS, path)) return ASSETS[path];
+  const thumb = path.replace(/\.jpg$/, "-sm.jpg");
+  if (thumb !== path && Object.prototype.hasOwnProperty.call(ASSETS, thumb)) {
+    return ASSETS[thumb];
+  }
   return path;
 }
 
@@ -57,8 +67,11 @@ export async function loadPlan() {
     // Per-sheet key table. Never merge these across sheets.
     const plantByKey = new Map(plants.map((p) => [p.key, p]));
 
+    const gaps = new Map((s.discrepancies || []).map((d) => [d.key, d]));
+
     for (const p of plants) {
       p.sheet = s.id;
+      p.gap = gaps.get(p.key) || null;
       p.slug = slug(p.botanical);
       p.photo = `images/plants/${p.slug}.jpg`;
       p.photoSmall = `images/plants/${p.slug}-sm.jpg`;

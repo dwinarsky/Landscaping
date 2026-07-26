@@ -1,0 +1,288 @@
+[
+  {
+    "id": "rear-border",
+    "name": "Rear Property Line",
+    "blurb": "The long screening border across the back of the lot, under the existing oaks, pines and redwoods.",
+    "description": "The deepest planting on the sheet and the one that does the most work: it screens the whole rear boundary. Fifteen white Flower Carpet roses run along it, backed by variegated pittosporum, Tahwhi, glossy abelia and eleven Chinese Fringe Flower for burgundy colour. Three Tasmanian tree ferns are tucked into the shade under the existing canopy.",
+    "existing": [
+      "(E) Oak",
+      "(E) Pine",
+      "(E) Redwoods",
+      "(E) Wood Fence",
+      "(E) Pittosporum Hedge",
+      "(E) Abelia",
+      "(E) Maple"
+    ],
+    "polygon": [
+      [
+        380,
+        450
+      ],
+      [
+        2450,
+        450
+      ],
+      [
+        2450,
+        1120
+      ],
+      [
+        380,
+        1120
+      ]
+    ]
+  },
+  {
+    "id": "west-border",
+    "name": "West Fence Border",
+    "blurb": "The border down the west property line, past the existing oaks and the pepper tree hedge.",
+    "description": "A narrow strip against the west boundary, mostly shade. All fourteen one-gallon African Box go in here as low edging, with white Kafir Lily and winter daphne in the shadiest pockets and jasmine pandorea trained up the fence.",
+    "existing": [
+      "(E) Oak",
+      "(E) Wood Fence",
+      "(E) Pepper Tree Hedge",
+      "(E) Shrub",
+      "UP - utility pole"
+    ],
+    "polygon": [
+      [
+        150,
+        700
+      ],
+      [
+        380,
+        700
+      ],
+      [
+        380,
+        1500
+      ],
+      [
+        420,
+        1900
+      ],
+      [
+        520,
+        2600
+      ],
+      [
+        150,
+        2600
+      ]
+    ],
+    "cropRect": {
+      "x": 150,
+      "y": 700,
+      "width": 620,
+      "height": 1700
+    }
+  },
+  {
+    "id": "oak-grove",
+    "name": "Oak & Pine Grove",
+    "blurb": "The stand of existing oaks and pines on the west side of the lawn, with their canopies drawn as dashed circles.",
+    "description": "Planting worked in around mature trees that were staying. Ten Blue Lily of the Nile and a big sweep of star jasmine take the dry shade beneath the canopies, with sweet olive for fragrance at the edge where you walk past.",
+    "existing": [
+      "(E) Oak",
+      "(E) Pines"
+    ],
+    "polygon": [
+      [
+        390,
+        1120
+      ],
+      [
+        1000,
+        1120
+      ],
+      [
+        1000,
+        1760
+      ],
+      [
+        418,
+        1760
+      ]
+    ]
+  },
+  {
+    "id": "rear-lawn",
+    "name": "Rear Lawn",
+    "blurb": "The open sod lawn in the middle of the back yard.",
+    "description": "Left deliberately empty. This is the proposed sod - the open centre the surrounding beds are composed around, and the only large part of either sheet with no planting called out on it at all.",
+    "existing": [
+      "Proposed sod"
+    ],
+    "polygon": [
+      [
+        1000,
+        1120
+      ],
+      [
+        1750,
+        1120
+      ],
+      [
+        1750,
+        1700
+      ],
+      [
+        1000,
+        1700
+      ]
+    ]
+  },
+  {
+    "id": "pool-terrace",
+    "name": "Pool & Terrace",
+    "blurb": "The existing pool, its coping, and the aggregate concrete deck around it.",
+    "description": "Planting kept deliberately sparse and tidy right at the water: deep pink Flower Carpet roses and Wheeler's Dwarf pittosporum in the beds cut into the deck, and a single white Crape Myrtle 'Natchez' as the specimen tree beside the terrace.",
+    "existing": [
+      "(E) Pool",
+      "(E) Noncolored conc + coping",
+      "(E) Agg conc"
+    ],
+    "polygon": [
+      [
+        1750,
+        1120
+      ],
+      [
+        2450,
+        1120
+      ],
+      [
+        2450,
+        1760
+      ],
+      [
+        1750,
+        1760
+      ]
+    ]
+  },
+  {
+    "id": "pool-shed-corner",
+    "name": "Pool Shed Corner",
+    "blurb": "The corner behind the pool shed, between the terrace and the east fence.",
+    "description": "A shaded service corner planted to soften it. Eleven star jasmine spread across the ground, African Box gives it structure, and two five-gallon Kafir Lily go in the deepest shade against the shed - the spot on the whole plan best suited to them.",
+    "existing": [
+      "(E) Pool Shed",
+      "(E) Pittosporum",
+      "DS - down spouts"
+    ],
+    "polygon": [
+      [
+        1900,
+        1760
+      ],
+      [
+        2450,
+        1760
+      ],
+      [
+        2450,
+        2200
+      ],
+      [
+        1900,
+        2200
+      ]
+    ]
+  },
+  {
+    "id": "house-terrace",
+    "name": "Rear of House",
+    "blurb": "The beds along the back wall of the residence, between the house and the lawn.",
+    "description": "The foundation planting you see from inside. A Chanticleer Pear stands as the specimen at one end, with Delavay osmanthus and African Box massed along the wall and nine of the ten transplanted hybrid tea roses replanted through the beds here.",
+    "existing": [
+      "Existing Residence",
+      "DN - step downs",
+      "DS - down spouts"
+    ],
+    "polygon": [
+      [
+        1060,
+        1700
+      ],
+      [
+        1900,
+        1700
+      ],
+      [
+        1900,
+        2200
+      ],
+      [
+        1060,
+        2200
+      ]
+    ]
+  },
+  {
+    "id": "flower-box-terrace",
+    "name": "Flower Box & Shed",
+    "blurb": "The southwest corner around the existing flower boxes and garden shed.",
+    "description": "The working corner of the garden. Eleven evergreen candytuft edge the path, Balsam Rosemary and a tree mallow give it height, and the last of the transplanted hybrid teas plus deep pink Flower Carpet roses fill the beds by the shed.",
+    "existing": [
+      "(E) Flower Box",
+      "(E) Shed",
+      "(E) Pyracantha",
+      "GM - gas meter"
+    ],
+    "polygon": [
+      [
+        430,
+        1760
+      ],
+      [
+        1060,
+        1760
+      ],
+      [
+        1060,
+        2600
+      ],
+      [
+        530,
+        2600
+      ]
+    ]
+  },
+  {
+    "id": "east-border",
+    "name": "East Fence Border",
+    "blurb": "The border along the east property line, behind the existing photinia and pittosporum hedges.",
+    "description": "A narrow, densely planted strip against the east fence. Seven Snow In Summer carpet the ground under six Balsam Rosemary, with yellow wild iris, a red barberry and seven star jasmine filling in. The single bougainvillea on the whole plan is staked here, on the warmest wall in the garden.",
+    "existing": [
+      "(E) Photinia Hedge",
+      "(E) Pittosporum Hedge",
+      "(E) Wood Fence",
+      "(E) Podocarpus"
+    ],
+    "polygon": [
+      [
+        2452,
+        1120
+      ],
+      [
+        2780,
+        1120
+      ],
+      [
+        2780,
+        2250
+      ],
+      [
+        2452,
+        2250
+      ]
+    ],
+    "cropRect": {
+      "x": 2180,
+      "y": 1150,
+      "width": 480,
+      "height": 1080
+    }
+  }
+]

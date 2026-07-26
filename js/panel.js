@@ -7,10 +7,7 @@
  */
 
 import { asset, bboxOf } from "./data.js";
-
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
-  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
-));
+import { esc } from "./util.js";
 
 const TYPE_LABEL = {
   tree: "Trees", shrub: "Shrubs", vine: "Vines", perennial: "Perennials",
@@ -187,6 +184,9 @@ export class Panel {
     const inferredFlag = inferred && spots[0]?.ambiguityNote
       ? `<p class="p-flag warn">${esc(spots[0].ambiguityNote)}</p>` : "";
 
+    const gapFlag = plant.gap
+      ? `<p class="p-flag warn">${esc(plant.gap.note)}</p>` : "";
+
     this.open(`
       ${from ? backBtn(from) : ""}
       <p class="p-eyebrow">${esc(sheet.label)} &middot; Key ${esc(plant.key)}</p>
@@ -195,6 +195,7 @@ export class Panel {
       ${photoFigure(plant)}
       ${collisionFlag}
       ${inferredFlag}
+      ${gapFlag}
 
       <h3 class="p-sub">From the blueprint</h3>
       <dl class="p-facts">
@@ -202,7 +203,8 @@ export class Panel {
         <dt>Quantity</dt><dd>${plant.qty}</dd>
         <dt>Size</dt><dd>${esc(plant.size)}</dd>
         ${plant.remarks ? `<dt>Remarks</dt><dd>${esc(plant.remarks)}</dd>` : ""}
-        <dt>Placed</dt><dd>${drawn} across ${spots.length} callout${spots.length === 1 ? "" : "s"}</dd>
+        <dt>Placed</dt><dd>${drawn} across ${spots.length} callout${spots.length === 1 ? "" : "s"}${
+          plant.gap ? ` &mdash; ${plant.qty - drawn} not located` : ""}</dd>
       </dl>
 
       <h3 class="p-sub">Growing notes</h3>

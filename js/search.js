@@ -5,9 +5,7 @@
  * different plants on the two sheets and a bare "AA" result would be ambiguous.
  */
 
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
-  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
-));
+import { esc } from "./util.js";
 
 function score(plant, q) {
   const key = plant.key.toLowerCase();

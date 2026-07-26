@@ -25,7 +25,9 @@ It must be served over HTTP; opening `index.html` from the filesystem fails beca
 | Sheet | Area | Species | Plants | Callouts | Areas |
 |-------|------|---------|--------|----------|-------|
 | 3 of 7 | Front yard | 41 | 281 | 91 | 11 |
-| 4 of 7 | Back yard | 36 | 258 | not yet mapped | — |
+| 4 of 7 | Back yard | 36 | 268 | 65 | 9 |
+
+549 plants and 156 callouts in total.
 
 Sheets 1, 2, 5, 6 and 7 (irrigation, lighting, grading and construction details) were not
 photographed and are not included. The data model handles any number of sheets — adding one is a
@@ -98,9 +100,16 @@ ones that are.
 
 The plant legend states a quantity per key; the drawing states a count per callout. Those must
 agree, per key and in total, which turns 41 legend rows into a checksum over 91 hand-read hexagons.
-`tools/validate.py` enforces it — the front yard reconciles exactly at **281 plants**. That is how
-the one callout the detector missed (`RF/4`, alone at the far west edge) was found: it showed up as
-a four-plant shortfall on one key.
+`tools/validate.py` enforces it. The front yard reconciles **exactly** at 281 plants; the back yard
+reconciles at 266 of 268 with one recorded gap (below). That is how missed callouts get found: the
+front yard's `RF/4`, alone at the far west edge, showed up as a four-plant shortfall on one key, and
+six more on the back sheet were tracked down the same way.
+
+The checksum also caught two things a careful reading missed. Three back-yard callouts read `RF`
+but had to be `RC` — `RF` was over by exactly 13 and `RC` short by exactly 13, and the three
+callouts summed to 13. And the `LC` legend quantity turned out to be **11, not 1**, which only
+became clear when two `LC` callouts totalling 11 refused to reconcile; re-reading the legend row at
+full resolution confirmed it.
 
 ## Things the data records honestly
 
@@ -118,6 +127,11 @@ a four-plant shortfall on one key.
 - **Some photos show the species, not the cultivar.** Wikimedia often has no photo of a specific
   cultivar. Those are flagged in `CREDITS.json` and captioned accordingly rather than implying a
   match. Nothing is substituted with a wrong plant.
+- **Two back-yard plants could not be placed.** The legend calls for 8 Gaiety Girl Tea Tree but
+  only three callouts are legible, totalling 6. The sheet has a crease and glare across part of the
+  plan and the fourth callout is most likely lost there. Rather than invent a location, the gap is
+  declared in `sheets.json`, surfaced on the plant card in the app, and downgraded by `validate.py`
+  from an error to a warning — so the gate still fails on any *new* mismatch.
 - **The plan is from 2001.** It records design intent, not what is alive in the garden today.
 
 ## Editing the map

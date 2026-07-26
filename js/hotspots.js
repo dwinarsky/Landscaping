@@ -6,13 +6,7 @@
  * progressively - dots only when zoomed out, plant keys once you are in close.
  */
 
-const SVG = "http://www.w3.org/2000/svg";
-
-function el(name, attrs = {}) {
-  const node = document.createElementNS(SVG, name);
-  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
-  return node;
-}
+import { svgEl } from "./util.js";
 
 export class Hotspots {
   constructor({ overlay, zoneLayer, markerLayer, onZone, onCallout }) {
@@ -32,7 +26,7 @@ export class Hotspots {
     this.markerNodes.clear();
 
     for (const zone of sheet.zones) {
-      const poly = el("polygon", {
+      const poly = svgEl("polygon", {
         class: "zone",
         points: zone.polygon.map((p) => p.join(",")).join(" "),
         role: "button",
@@ -45,7 +39,7 @@ export class Hotspots {
       });
       this.zoneLayer.append(poly);
 
-      const label = el("text", {
+      const label = svgEl("text", {
         class: "zone-label",
         x: zone.centroid[0],
         y: zone.centroid[1],
@@ -56,7 +50,7 @@ export class Hotspots {
     }
 
     for (const c of sheet.callouts) {
-      const g = el("g", {
+      const g = svgEl("g", {
         class: "mk",
         transform: `translate(${c.x} ${c.y})`,
         role: "button",
@@ -65,14 +59,14 @@ export class Hotspots {
           ? `${c.count} ${c.plant.common || c.plant.botanical}`
           : `${c.count} of ${c.key}`,
       });
-      g.append(el("circle", { class: "mk-hit", r: 22 }));
-      g.append(el("circle", { class: "mk-dot", r: 11 }));
+      g.append(svgEl("circle", { class: "mk-hit", r: 22 }));
+      g.append(svgEl("circle", { class: "mk-dot", r: 11 }));
 
-      const n = el("text", { class: "mk-n", x: 0, y: 0 });
+      const n = svgEl("text", { class: "mk-n", x: 0, y: 0 });
       n.textContent = c.count;
       g.append(n);
 
-      const key = el("text", { class: "mk-key", x: 0, y: 24 });
+      const key = svgEl("text", { class: "mk-key", x: 0, y: 24 });
       key.textContent = c.lookupKey;
       g.append(key);
 

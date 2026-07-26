@@ -38,12 +38,20 @@ def main() -> int:
 
     total = 0
     for z in zones:
-        xs = [p[0] for p in z["polygon"]]
-        ys = [p[1] for p in z["polygon"]]
-        x0 = max(0, min(xs) - args.pad)
-        y0 = max(0, min(ys) - args.pad)
-        x1 = min(w, max(xs) + args.pad)
-        y1 = min(h, max(ys) + args.pad)
+        # Some zones' callouts sit out in the sheet margin next to the legend
+        # table, so the polygon's bounding box frames label text rather than the
+        # planting. cropRect lets those zones point at the bed instead.
+        if "cropRect" in z:
+            r = z["cropRect"]
+            x0, y0 = max(0, r["x"]), max(0, r["y"])
+            x1, y1 = min(w, r["x"] + r["width"]), min(h, r["y"] + r["height"])
+        else:
+            xs = [p[0] for p in z["polygon"]]
+            ys = [p[1] for p in z["polygon"]]
+            x0 = max(0, min(xs) - args.pad)
+            y0 = max(0, min(ys) - args.pad)
+            x1 = min(w, max(xs) + args.pad)
+            y1 = min(h, max(ys) + args.pad)
         crop = img[y0:y1, x0:x1]
         if crop.size == 0:
             print(f"  !! {z['id']}: empty crop")

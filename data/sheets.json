@@ -35,7 +35,7 @@
     "rotation": 90,
     "source": "images/source/sheet-04-back.jpeg",
     "plan": "images/sheet-04-back/plan",
-    "plantTotal": 258,
+    "plantTotal": 268,
     "speciesCount": 36,
     "defaultView": {
       "x": 140,
@@ -49,6 +49,14 @@
       2048,
       4028
     ],
-    "mapped": false
+    "mapped": true,
+    "discrepancies": [
+      {
+        "key": "LS",
+        "legendQty": 8,
+        "drawnQty": 6,
+        "note": "The legend calls for 8 Gaiety Girl Tea Tree but only three callouts are legible on the drawing - LS/3, LS/2 and LS/1, totalling 6. A fourth callout for the remaining 2 was not found. The sheet has a crease and glare across part of the plan and it is most likely lost there. Rather than invent a location, the gap is recorded here."
+      }
+    ]
   }
 ]

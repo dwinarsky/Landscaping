@@ -7,7 +7,7 @@
  * without needing to hand-edit coordinates.
  */
 
-const SVG = "http://www.w3.org/2000/svg";
+import { SVG_NS } from "./util.js";
 
 export function isEditing() {
   return new URLSearchParams(location.search).get("edit") === "1";
@@ -19,7 +19,7 @@ export class Editor {
     this.overlay = overlay;
     this.sheet = sheet;
     this.onChange = onChange || (() => {});
-    this.layer = document.createElementNS(SVG, "g");
+    this.layer = document.createElementNS(SVG_NS, "g");
     this.layer.setAttribute("id", "edit-layer");
     overlay.append(this.layer);
     this._buildBar();
@@ -37,11 +37,11 @@ export class Editor {
   }
 
   _handle(pt, kind, owner, index) {
-    const g = document.createElementNS(SVG, "g");
+    const g = document.createElementNS(SVG_NS, "g");
     g.setAttribute("class", "mk");
     g.setAttribute("transform", `translate(${pt[0]} ${pt[1]})`);
 
-    const dot = document.createElementNS(SVG, "circle");
+    const dot = document.createElementNS(SVG_NS, "circle");
     dot.setAttribute("r", kind === "zone" ? 9 : 7);
     dot.setAttribute("fill", kind === "zone" ? "#e0563f" : "#2fae6a");
     dot.setAttribute("stroke", "#fff");

@@ -1,4 +1,26 @@
 {
+ "abelia-x-grandiflora": {
+  "author": "Botany Today",
+  "botanical": "Abelia x grandiflora",
+  "file": "File:Abelia X Grandiflora 2.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Abelia_X_Grandiflora_2.jpg",
+  "usedBy": [
+   "sheet-04-back:AG"
+  ]
+ },
+ "abutilon-hyb-luteus": {
+  "author": "Rhododendrites",
+  "botanical": "Abutilon hyb. 'Luteus'",
+  "file": "File:Abutilon Biltmore Ballgown (80891).jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": true,
+  "source": "https://commons.wikimedia.org/wiki/File:Abutilon_Biltmore_Ballgown_(80891).jpg",
+  "usedBy": [
+   "sheet-04-back:AB"
+  ]
+ },
  "abutilon-hyb-moonchimes": {
   "author": "Rhododendrites",
   "botanical": "Abutilon hyb. 'Moonchimes'",
@@ -19,6 +41,17 @@
   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_from_Ooty_India.jpg",
   "usedBy": [
    "sheet-03-front:AA"
+  ]
+ },
+ "agapanthus-africanus-blue": {
+  "author": "David \u00c1lvarez L\u00f3pez from Gij\u00f3n, Espa\u00f1a",
+  "botanical": "Agapanthus africanus 'Blue'",
+  "file": "File:Agapanto (Agapanthus africanus). Blue African Lilly. (53035155290).jpg",
+  "licence": "CC BY 2.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Agapanto_(Agapanthus_africanus)._Blue_African_Lilly._(53035155290).jpg",
+  "usedBy": [
+   "sheet-04-back:AA"
   ]
  },
  "agapanthus-africanus-peter-pan": {
@@ -76,6 +109,28 @@
    "sheet-03-front:BT"
   ]
  },
+ "bougainvillea-spectabilis": {
+  "author": "SAplants",
+  "botanical": "Bougainvillea spectabilis",
+  "file": "File:Bougainvillea spectabilis (cultivar) 5Dsr 3235.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Bougainvillea_spectabilis_(cultivar)_5Dsr_3235.jpg",
+  "usedBy": [
+   "sheet-04-back:BS"
+  ]
+ },
+ "cerastium-tomentosum": {
+  "author": "Cbaile19",
+  "botanical": "Cerastium tomentosum",
+  "file": "File:Cerastium tomentosum, Beechview, 2024-05-12, 01.jpg",
+  "licence": "CC0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Cerastium_tomentosum,_Beechview,_2024-05-12,_01.jpg",
+  "usedBy": [
+   "sheet-04-back:CT"
+  ]
+ },
  "ceratostigma-plumbaginoides": {
   "author": "Agnes Monkelbaan",
   "botanical": "Ceratostigma plumbaginoides",
@@ -85,6 +140,18 @@
   "source": "https://commons.wikimedia.org/wiki/File:Ceratostigma_plumbaginoides,_loodplant._08-09-2025._(actm.)_01.jpg",
   "usedBy": [
    "sheet-03-front:CE"
+  ]
+ },
+ "clivia-miniata": {
+  "author": "Bernard DUPONT from FRANCE",
+  "botanical": "Clivia miniata",
+  "file": "File:Bush Lily (Clivia miniata) (32985230915).jpg",
+  "licence": "CC BY-SA 2.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Bush_Lily_(Clivia_miniata)_(32985230915).jpg",
+  "usedBy": [
+   "sheet-04-back:CL",
+   "sheet-04-back:CM"
   ]
  },
  "clytostoma-callistegioides": {
@@ -118,6 +185,17 @@
   "source": "https://commons.wikimedia.org/wiki/File:210205_096_San_Diego_Botanic_Gdn_-_African_Gdn,_Sansevieria_parva_Kenya_Hyacinth,_Aeonium_sp,_Coleonema_pulchrum_%27Sunset_Gold%27.jpg",
   "usedBy": [
    "sheet-03-front:CP"
+  ]
+ },
+ "daphne-odora-marginata": {
+  "author": "Photo by David J. Stang",
+  "botanical": "Daphne odora 'Marginata'",
+  "file": "File:Daphne odora 1zz.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Daphne_odora_1zz.jpg",
+  "usedBy": [
+   "sheet-04-back:DO"
   ]
  },
  "dicksonia-antarctica": {
@@ -208,6 +286,39 @@
    "sheet-03-front:HA"
   ]
  },
+ "heteromeles-arbutifolia": {
+  "author": "Krzysztof Ziarnek, Kenraiz",
+  "botanical": "Heteromeles arbutifolia",
+  "file": "File:Heteromeles arbutifolia 'Davis Gold' kz1.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Heteromeles_arbutifolia_%27Davis_Gold%27_kz1.jpg",
+  "usedBy": [
+   "sheet-04-back:HA"
+  ]
+ },
+ "iberis-sempervirens-snowflake": {
+  "author": "Photo by David J. Stang",
+  "botanical": "Iberis sempervirens 'Snowflake'",
+  "file": "File:Iberis sempervirens Snowflake 10zz.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Iberis_sempervirens_Snowflake_10zz.jpg",
+  "usedBy": [
+   "sheet-04-back:IS"
+  ]
+ },
+ "lagerstroemia-x-natchez": {
+  "author": "Calistemon",
+  "botanical": "Lagerstroemia X 'Natchez'",
+  "file": "File:Lagerstroemia indica \u00d7 fauriei 'Natchez' in Golden Valley Tree Park, May 2022.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_%C3%97_fauriei_%27Natchez%27_in_Golden_Valley_Tree_Park,_May_2022.jpg",
+  "usedBy": [
+   "sheet-04-back:LI"
+  ]
+ },
  "lantana-montevidensis": {
   "author": "Elucidate (talk)",
   "botanical": "Lantana montevidensis",
@@ -217,6 +328,17 @@
   "source": "https://commons.wikimedia.org/wiki/File:Lantana_montevidensis.JPG",
   "usedBy": [
    "sheet-03-front:LM"
+  ]
+ },
+ "lavatera-thuringiaca-barnsley": {
+  "author": "Stefan.lefnaer",
+  "botanical": "Lavatera thuringiaca 'Barnsley'",
+  "file": "File:Lavatera thuringiaca sl23.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": true,
+  "source": "https://commons.wikimedia.org/wiki/File:Lavatera_thuringiaca_sl23.jpg",
+  "usedBy": [
+   "sheet-04-back:LT"
   ]
  },
  "leptospermum-sco-gaiety-girl": {
@@ -239,6 +361,17 @@
   "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Leptospermum_scoparium_%27Burgundy_Queen%27_-_Leaves_and_flower.jpg",
   "usedBy": [
    "sheet-03-front:LN"
+  ]
+ },
+ "loropetalum-chinense-razzelberri": {
+  "author": "Didier Descouens",
+  "botanical": "Loropetalum chinense 'Razzelberri'",
+  "file": "File:(MHNT) Loropetalum chinense f. rubrum - blossom.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": true,
+  "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Loropetalum_chinense_f._rubrum_-_blossom.jpg",
+  "usedBy": [
+   "sheet-04-back:LC"
   ]
  },
  "magnolia-rustica-rubra": {
@@ -319,6 +452,17 @@
    "sheet-03-front:OF"
   ]
  },
+ "pandorea-jasminoides-rosea": {
+  "author": "Forest &amp; Kim Starr",
+  "botanical": "Pandorea jasminoides 'Rosea'",
+  "file": "File:Starr 080117-1632 Pandorea jasminoides.jpg",
+  "licence": "CC BY 3.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Starr_080117-1632_Pandorea_jasminoides.jpg",
+  "usedBy": [
+   "sheet-04-back:PJ"
+  ]
+ },
  "pennisetum-eaton-canyon": {
   "author": "Dinesh Valke from Thane, India",
   "botanical": "Pennisetum 'Eaton Canyon'",
@@ -339,6 +483,17 @@
   "source": "https://commons.wikimedia.org/wiki/File:Phormium_tenax-1-botanical_garden-ooty-India.jpg",
   "usedBy": [
    "sheet-03-front:PH"
+  ]
+ },
+ "photinia-x-fraseri": {
+  "author": "Hedwig Storch",
+  "botanical": "Photinia x fraseri",
+  "file": "File:Monte (Funchal) - Photinia x fraseri (Glanzmispel 'Red Robin') IMG 2007.JPG",
+  "licence": "CC BY-SA 3.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Monte_(Funchal)_-_Photinia_x_fraseri_(Glanzmispel_%27Red_Robin%27)_IMG_2007.JPG",
+  "usedBy": [
+   "sheet-04-back:PF"
   ]
  },
  "pittosporum-tenuifolium": {
@@ -363,6 +518,17 @@
    "sheet-03-front:PV"
   ]
  },
+ "pittosporum-tobira-wheeleri": {
+  "author": "Forest and Kim Starr",
+  "botanical": "Pittosporum tobira 'Wheeleri'",
+  "file": "File:Starr-080117-1954-Pittosporum tobira-Wheeleri leaves-Home Depot Nursery Kahului-Maui (24533771819).jpg",
+  "licence": "CC BY 3.0 us",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Starr-080117-1954-Pittosporum_tobira-Wheeleri_leaves-Home_Depot_Nursery_Kahului-Maui_(24533771819).jpg",
+  "usedBy": [
+   "sheet-04-back:PW"
+  ]
+ },
  "pittosporum-tobira-wheelerii": {
   "author": "Alvesgaspar",
   "botanical": "Pittosporum tobira 'Wheelerii'",
@@ -385,6 +551,28 @@
    "sheet-03-front:PM"
   ]
  },
+ "pyrus-calleryana-chanticleer": {
+  "author": "Herzi Pinki",
+  "botanical": "Pyrus calleryana 'Chanticleer'",
+  "file": "File:Pyrus calleryana, Ansch\u00fctzgasse 4, Vienna.jpg",
+  "licence": "CC BY-SA 4.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Pyrus_calleryana,_Ansch%C3%BCtzgasse_4,_Vienna.jpg",
+  "usedBy": [
+   "sheet-04-back:PC"
+  ]
+ },
+ "rosa-hybrid-tea": {
+  "author": "Arashiyama",
+  "botanical": "Rosa 'Hybrid Tea'",
+  "file": "File:Hybrid Tea Rose (Rosa ) 'Flamingo'.jpg",
+  "licence": "CC BY-SA 3.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Hybrid_Tea_Rose_(Rosa_)_%27Flamingo%27.jpg",
+  "usedBy": [
+   "sheet-04-back:R"
+  ]
+ },
  "rosa-var-noatratum-flower-carpet": {
   "author": "Anthony Tesselaar",
   "botanical": "Rosa var. noatratum 'Flower Carpet'",
@@ -395,6 +583,17 @@
   "usedBy": [
    "sheet-03-front:RC",
    "sheet-03-front:RF"
+  ]
+ },
+ "rosmarinus-o-benenden-blue": {
+  "author": "Antonio from Mijas, Espa\u00f1a",
+  "botanical": "Rosmarinus o. 'Benenden Blue'",
+  "file": "File:Rosmarinus officinalis closeup of flowers.jpg",
+  "licence": "CC BY-SA 2.0",
+  "showsSpeciesNotCultivar": false,
+  "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_closeup_of_flowers.jpg",
+  "usedBy": [
+   "sheet-04-back:RB"
   ]
  },
  "rosmarinus-o-collingwood-ingram": {

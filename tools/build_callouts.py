@@ -41,6 +41,18 @@ READINGS: dict[str, dict[int, str]] = {
         102: "AA/3", 104: "CE/1", 105: "LN/2", 106: "AA/9", 107: "BA/3",
         108: "CP/3", 110: "LM/14",
     },
+    "sheet-04-back": {
+        1: "HA/1", 2: "PV/4", 3: "CC/1", 4: "AA/7", 5: "LC/8", 6: "AG/5", 7: "TR/1",
+        8: "PT/7", 9: "DA/3", 10: "PV/9", 11: "AG/1", 12: "AB/1", 13: "RF/15",
+        15: "HV/1", 16: "AA/23", 17: "DO/3", 18: "LC/3", 19: "CC/1", 20: "LS/3",
+        21: "PJ/1", 22: "RC/4", 23: "AA/10", 24: "DO/2", 25: "CM/3", 27: "AH/1",
+        28: "RC/6", 29: "PF/3", 30: "PW/6", 32: "AA/3", 33: "LI/1", 35: "OF/2",
+        36: "OF/7", 37: "TJ/12", 38: "AH/1", 40: "PC/1", 41: "DB/2", 43: "R/3",
+        47: "MA/5", 48: "R/6", 49: "CT/7", 50: "TJ/11", 51: "MA/3", 52: "AG/1",
+        53: "OD/4", 54: "RB/6", 57: "CL/2", 58: "DB/2", 59: "DB/1", 60: "OD/2",
+        63: "OF/1", 64: "BT/1", 65: "AA/1", 69: "IS/11", 70: "LS/2", 71: "LT/1",
+        72: "PJ/2", 73: "RB/3", 74: "R/1", 75: "LS/1", 81: "RC/3",
+    },
 }
 
 # Callouts the detector missed, located by hand after the checksum flagged a
@@ -50,6 +62,15 @@ EXTRA: dict[str, list[dict]] = {
         {"key": "RF", "count": 4, "x": 255, "y": 863,
          "note": "Missed by shape detection - it sits alone at the far west edge "
                  "of the sheet. Found by chasing the RF shortfall in the checksum."},
+    ],
+    "sheet-04-back": [
+        # A column in the blank west margin, below the detector's reach.
+        {"key": "AA", "count": 1, "x": 292, "y": 2010},
+        {"key": "CC", "count": 1, "x": 298, "y": 2074},
+        {"key": "MY", "count": 14, "x": 357, "y": 2135},
+        # Two more tucked against the east edge, right up beside the legend block.
+        {"key": "TJ", "count": 7, "x": 2676, "y": 2093},
+        {"key": "BS", "count": 1, "x": 2682, "y": 2152},
     ],
 }
 
@@ -92,7 +113,7 @@ def main() -> int:
         c = cands[idx - 1]
         key, count = spec.split("/")
         rec = {
-            "id": f"f{len(out) + 1:03d}",
+            "id": None,
             "key": key,
             "count": int(count),
             "x": c["x"],
@@ -106,13 +127,14 @@ def main() -> int:
         out.append(rec)
 
     for extra in EXTRA.get(args.sheet, []):
-        rec = {"id": f"f{len(out) + 1:03d}", "bbox": None, "candidate": None}
+        rec = {"id": None, "bbox": None, "candidate": None}
         rec.update(extra)
         out.append(rec)
 
     out.sort(key=lambda r: (r["y"], r["x"]))
+    prefix = "f" if args.sheet.endswith("front") else "b"
     for i, rec in enumerate(out, 1):
-        rec["id"] = f"f{i:03d}"
+        rec["id"] = f"{prefix}{i:03d}"
 
     path = data_dir / "callouts.json"
     path.write_text(json.dumps(out, indent=1) + "\n")
