@@ -70,8 +70,12 @@ python3 tools/build_callouts.py --sheet sheet-03-front
 # 5. Crop a zoomed view of the plan for each garden area.
 python3 tools/crop_zones.py --sheet sheet-03-front
 
-# 6. Fetch one openly-licensed photo per species.
+# 6. Fetch photos: a whole-plant shot and a close-up per species.
 python3 tools/fetch_plant_photos.py
+
+# 6b. Only if a photo looks wrong - build contact sheets and pick by eye,
+#     then pin the choice in the PICKS table in fetch_plant_photos.py.
+python3 tools/review_photos.py --combined --species "Daphne odora" "Myrsine africana"
 
 # 7. Check it all against the blueprint's own arithmetic.
 python3 tools/validate.py
@@ -127,6 +131,9 @@ full resolution confirmed it.
 - **Some photos show the species, not the cultivar.** Wikimedia often has no photo of a specific
   cultivar. Those are flagged in `CREDITS.json` and captioned accordingly rather than implying a
   match. Nothing is substituted with a wrong plant.
+- **Two species have no whole-plant photo at all** on Commons - the daylily and the hybrid tea
+  rose. Their cards say "Closest available" instead of "Whole plant" and state that no habit shot
+  exists, rather than captioning a flower macro as if it showed the plant.
 - **Two back-yard plants could not be placed.** The legend calls for 8 Gaiety Girl Tea Tree but
   only three callouts are legible, totalling 6. The sheet has a crease and glare across part of the
   plan and the fourth callout is most likely lost there. Rather than invent a location, the gap is
@@ -164,6 +171,26 @@ deploy so a broken transcription cannot ship.
 `.nojekyll` matters: without it Pages runs the repository through Jekyll, which silently drops
 every file whose name starts with `_` — including the `_callout-candidates.json` that
 `build_callouts.py` indexes into. Nothing at runtime loads those, but the 404s are confusing.
+
+## Plant photos
+
+Each species gets two: a **habit** shot showing the whole plant, and a **close-up** of the flower
+or foliage. The habit shot leads, because standing in the garden the useful question is whether
+this is a groundcover or a fifteen-foot shrub, and a flower macro cannot answer that.
+
+Getting habit shots out of Commons is harder than it sounds. It is overwhelmingly flower macros,
+and picking "the largest, most landscape-shaped result" returns those plus scenery from wherever
+the plant happens to grow. The first pass produced a car park for *Hardenbergia*, a street with
+power lines for *Podocarpus*, a building facade for *Pyrus*, bare dirt for dwarf agapanthus, a moth
+for star jasmine, and plant labels on stakes for *Daphne* and star jasmine again.
+
+`fetch_plant_photos.py` now pools candidates from several queries and scores each on what its title
+and description say the picture shows, rejecting signs, herbarium sheets, insects and streetscapes.
+That fixes most of them. The rest cannot be fixed by keywords - a file captioned only "Daphne
+odora" really can be a label on a stake, and an insect can be named in Latin
+(*Autographa gamma* on a jasmine flower). Those 34 species are pinned by filename in the `PICKS`
+table, chosen by eye from `review_photos.py` contact sheets. 55 of 57 species now have a genuine
+whole-plant photo.
 
 ## Photo credits
 

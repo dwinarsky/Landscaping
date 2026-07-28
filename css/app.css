@@ -591,7 +591,19 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   margin: 0 0 14px;
 }
 
-figure.p-fig { margin: 0 0 14px; }
+/* The whole-plant shot leads; the close-up sits beside it on wider panels and
+   underneath on a phone. Both are labelled so it is obvious which is which. */
+.p-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+@media (min-width: 420px) {
+  .p-photos:has(.p-fig-detail) { grid-template-columns: 1.6fr 1fr; align-items: start; }
+}
+
+figure.p-fig { margin: 0; min-width: 0; }
 figure.p-fig img {
   display: block;
   width: 100%;
@@ -600,6 +612,7 @@ figure.p-fig img {
   border-radius: var(--radius);
   background: var(--card-2);
 }
+figure.p-fig-habit img { aspect-ratio: 3 / 2; }
 figure.p-fig figcaption {
   font-size: 10.5px;
   line-height: 1.45;
@@ -607,6 +620,19 @@ figure.p-fig figcaption {
   padding-top: 5px;
 }
 figure.p-fig a { color: var(--text-dim); }
+
+.p-figtag.muted { color: var(--text-faint); }
+
+.p-figtag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 5px;
+}
 
 .p-flag {
   display: flex;

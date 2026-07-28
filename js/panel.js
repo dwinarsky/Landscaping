@@ -27,22 +27,48 @@ function swatch(plant) {
     plant.bloomColor ? "Bloom colour" : "Foliage colour"}"></span>`;
 }
 
-function photoFigure(plant, { small = false } = {}) {
-  const path = small ? plant.photoSmall : plant.photo;
+function attribution(credit) {
+  return `${esc(credit.author)} &middot; ${esc(credit.licence)} &middot;
+    <a href="${esc(credit.source)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>`;
+}
+
+/** The whole plant, plus a close-up when one was found. */
+function photoFigure(plant) {
   const credit = plant.credit;
   if (!credit) return "";
+
   const cultivar = plant.botanical.match(/'([^']*)'/)?.[1];
   const cultivarNote = credit.showsSpeciesNotCultivar
-    ? `<br>Photo shows the species${cultivar ? `, not the '${esc(cultivar)}' cultivar` : ""}.`
+    ? `<br>Shows the species${cultivar ? `, not the '${esc(cultivar)}' cultivar` : ""}.`
     : "";
+
+  const detail = plant.creditDetail ? `
+    <figure class="p-fig p-fig-detail">
+      <img src="${esc(asset(plant.photoDetail))}"
+           alt="Close-up of ${esc(plant.common || plant.botanical)}"
+           loading="lazy" decoding="async">
+      <figcaption><span class="p-figtag">Close up</span>
+        ${attribution(plant.creditDetail)}</figcaption>
+    </figure>` : "";
+
+  // Only claim "whole plant" when the picture actually shows one. Where
+  // Commons has nothing but close-ups, say so rather than mislabel it.
+  const isHabit = credit.isHabit !== false;
+  const tag = isHabit ? "Whole plant" : "Closest available";
+  const noHabitNote = isHabit ? ""
+    : "<br>No whole-plant photo of this one on Wikimedia Commons.";
+
   return `
-    <figure class="p-fig">
-      <img src="${esc(asset(path))}" alt="${esc(plant.common || plant.botanical)}" loading="lazy" decoding="async">
-      <figcaption>
-        ${esc(credit.author)} &middot; ${esc(credit.licence)} &middot;
-        <a href="${esc(credit.source)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>${cultivarNote}
-      </figcaption>
-    </figure>`;
+    <div class="p-photos">
+      <figure class="p-fig p-fig-habit">
+        <img src="${esc(asset(plant.photo))}"
+             alt="${esc(plant.common || plant.botanical)}${isHabit ? " growing" : ""}"
+             loading="lazy" decoding="async">
+        <figcaption><span class="p-figtag${isHabit ? "" : " muted"}">${tag}</span>
+          ${attribution(credit)}${cultivarNote}${noHabitNote}</figcaption>
+      </figure>
+      ${detail}
+    </div>`;
 }
 
 function plantRow(row, { showSpots = true } = {}) {

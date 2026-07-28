@@ -54,6 +54,7 @@ def main() -> int:
     ap.add_argument("--plan-width", type=int, default=2048)
     ap.add_argument("--photo-width", type=int, default=300)
     ap.add_argument("--zone-width", type=int, default=620)
+    ap.add_argument("--detail-width", type=int, default=220)
     args = ap.parse_args()
 
     sheets = json.loads((ROOT / "data" / "sheets.json").read_text())
@@ -111,13 +112,19 @@ def main() -> int:
                 continue
             seen.add(slug)
             small = ROOT / "images" / "plants" / f"{slug}-sm.jpg"
-            if not small.exists():
-                continue
-            blob = shrink(small, args.photo_width, 72)
-            # Register the thumbnail only. asset() in data.js falls back from
-            # the full-size path to this one, so embedding it twice is waste.
-            assets[f"images/plants/{slug}-sm.jpg"] = data_uri(pathlib.Path("p.webp"), blob)
-            budget["plants"] += len(blob)
+            if small.exists():
+                blob = shrink(small, args.photo_width, 72)
+                # Register the thumbnail only. asset() in data.js falls back
+                # from the full-size path to this one, so embedding it twice
+                # would be pure waste.
+                assets[f"images/plants/{slug}-sm.jpg"] = data_uri(pathlib.Path("p.webp"), blob)
+                budget["plants"] += len(blob)
+
+            detail = ROOT / "images" / "plants" / f"{slug}-detail.jpg"
+            if detail.exists():
+                blob = shrink(detail, args.detail_width, 70)
+                assets[f"images/plants/{slug}-detail.jpg"] = data_uri(pathlib.Path("d.webp"), blob)
+                budget["plants"] += len(blob)
 
     # ---- assemble --------------------------------------------------------
     html = (ROOT / "index.html").read_text()

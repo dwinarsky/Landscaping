@@ -1,630 +1,1269 @@
 {
  "abelia-x-grandiflora": {
-  "author": "Botany Today",
   "botanical": "Abelia x grandiflora",
-  "file": "File:Abelia X Grandiflora 2.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Abelia_X_Grandiflora_2.jpg",
+  "detail": {
+   "author": "Daniel VILLAFRUELA.",
+   "file": "File:Abelia x grandiflora-Fleurs-20200601.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abelia_x_grandiflora-Fleurs-20200601.jpg"
+  },
+  "habit": {
+   "author": "Gmihail at Serbian Wikipedia",
+   "file": "File:Abelia \u00d7 grandiflora habitus.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0 rs",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abelia_%C3%97_grandiflora_habitus.jpg"
+  },
   "usedBy": [
    "sheet-04-back:AG"
   ]
  },
  "abutilon-hyb-luteus": {
-  "author": "Rhododendrites",
   "botanical": "Abutilon hyb. 'Luteus'",
-  "file": "File:Abutilon Biltmore Ballgown (80891).jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Abutilon_Biltmore_Ballgown_(80891).jpg",
+  "detail": {
+   "author": "Micka\u00ebl Schauli",
+   "file": "File:Abutilon indicum - par Mickael Schauli.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abutilon_indicum_-_par_Mickael_Schauli.jpg"
+  },
+  "habit": {
+   "author": "John Robert McPherson",
+   "file": "File:Abutilon sp, Van dommele's garden, 20 Pacific Heights Drive, Cumberlum IMGP6578.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abutilon_sp,_Van_dommele%27s_garden,_20_Pacific_Heights_Drive,_Cumberlum_IMGP6578.jpg"
+  },
   "usedBy": [
    "sheet-04-back:AB"
   ]
  },
  "abutilon-hyb-moonchimes": {
-  "author": "Rhododendrites",
   "botanical": "Abutilon hyb. 'Moonchimes'",
-  "file": "File:Abutilon Biltmore Ballgown (80891).jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Abutilon_Biltmore_Ballgown_(80891).jpg",
+  "detail": {
+   "author": "Micka\u00ebl Schauli",
+   "file": "File:Abutilon indicum - par Mickael Schauli.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abutilon_indicum_-_par_Mickael_Schauli.jpg"
+  },
+  "habit": {
+   "author": "John Robert McPherson",
+   "file": "File:Abutilon sp, Van dommele's garden, 20 Pacific Heights Drive, Cumberlum IMGP6578.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Abutilon_sp,_Van_dommele%27s_garden,_20_Pacific_Heights_Drive,_Cumberlum_IMGP6578.jpg"
+  },
   "usedBy": [
    "sheet-03-front:AB"
   ]
  },
  "agapanthus-africanus": {
-  "author": "Navaneeth Krishnan S",
   "botanical": "Agapanthus africanus",
-  "file": "File:Agapanthus africanus from Ooty India.jpg",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_from_Ooty_India.jpg",
+  "detail": {
+   "author": "Prenn",
+   "file": "File:Agapanthus africanus 01.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_01.JPG"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Agapanthus africanus 17zz.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_17zz.jpg"
+  },
   "usedBy": [
    "sheet-03-front:AA"
   ]
  },
  "agapanthus-africanus-blue": {
-  "author": "David \u00c1lvarez L\u00f3pez from Gij\u00f3n, Espa\u00f1a",
   "botanical": "Agapanthus africanus 'Blue'",
-  "file": "File:Agapanto (Agapanthus africanus). Blue African Lilly. (53035155290).jpg",
-  "licence": "CC BY 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Agapanto_(Agapanthus_africanus)._Blue_African_Lilly._(53035155290).jpg",
+  "detail": {
+   "author": "Prenn",
+   "file": "File:Agapanthus africanus 01.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_01.JPG"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Agapanthus africanus 17zz.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_17zz.jpg"
+  },
   "usedBy": [
    "sheet-04-back:AA"
   ]
  },
  "agapanthus-africanus-peter-pan": {
-  "author": "Yercaud-elango",
   "botanical": "Agapanthus africanus 'Peter Pan'",
-  "file": "File:Agapanthus africanus minor-1-shevaroy nursery-yercaud-salem-India.JPG",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_minor-1-shevaroy_nursery-yercaud-salem-India.JPG",
+  "detail": {
+   "author": "Prenn",
+   "file": "File:Agapanthus africanus 01.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_01.JPG"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Agapanthus africanus 17zz.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Agapanthus_africanus_17zz.jpg"
+  },
   "usedBy": [
    "sheet-03-front:AP"
   ]
  },
  "alyogyne-huegelii": {
-  "author": "Krzysztof Ziarnek, Kenraiz",
   "botanical": "Alyogyne huegelii",
-  "file": "File:Alyogyne huegelii kz01.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Alyogyne_huegelii_kz01.jpg",
+  "detail": {
+   "author": "Public domainPublic domainfalsefalse This work has been released into the public domain by its author, Cygnis insignis. This applies worldwide.In some countries this may not be legally possible; if so:Cygnis insignis grants anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law.",
+   "file": "File:Alyogyne.JPG",
+   "handPicked": true,
+   "licence": "Public domain",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Alyogyne.JPG"
+  },
+  "habit": {
+   "author": "Tatiana Gerus from Brisbane, Australia",
+   "file": "File:Alyogyne huegelii.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY 2.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Alyogyne_huegelii.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:AH"
+   "sheet-03-front:AH",
+   "sheet-04-back:AH"
   ]
  },
  "arbutus-unedo": {
-  "author": "Robert Flogaus-Faust",
   "botanical": "Arbutus unedo",
-  "file": "File:Arbutus unedo RF.jpg",
-  "licence": "CC BY 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Arbutus_unedo_RF.jpg",
+  "detail": {
+   "author": "Jules Verne Times Two",
+   "file": "File:Strawberry tree (Arbutus unedo) fruit and leaves on a rainy day, Parque Florestal de Monsanto, Lisbon, Portugal julesvernex2.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Strawberry_tree_(Arbutus_unedo)_fruit_and_leaves_on_a_rainy_day,_Parque_Florestal_de_Monsanto,_Lisbon,_Portugal_julesvernex2.jpg"
+  },
+  "habit": {
+   "author": "Calistemon",
+   "file": "File:Arbutus unedo in Golden Valley Tree Park, May 2022 01.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Arbutus_unedo_in_Golden_Valley_Tree_Park,_May_2022_01.jpg"
+  },
   "usedBy": [
    "sheet-03-front:AU"
   ]
  },
  "berberis-thu-atropurpurea": {
-  "author": "Abraham",
   "botanical": "Berberis thu. 'Atropurpurea'",
-  "file": "File:20250526 berberys Thunberga Berberis thunbergii Panewniki.jpg",
-  "licence": "CC BY 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:20250526_berberys_Thunberga_Berberis_thunbergii_Panewniki.jpg",
+  "detail": {
+   "author": "Eric Polk",
+   "file": "File:Berberis thunbergii f atropurpurea Rose Glow dark leaf.png",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Berberis_thunbergii_f_atropurpurea_Rose_Glow_dark_leaf.png"
+  },
+  "habit": {
+   "author": "Hladac",
+   "file": "File:(ms) Berberis thunbergii 11.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:(ms)_Berberis_thunbergii_11.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:BA"
+   "sheet-03-front:BA",
+   "sheet-04-back:BT"
   ]
  },
  "berberis-thu-crimson-pygmy": {
-  "author": "Abraham",
   "botanical": "Berberis thu. 'Crimson Pygmy'",
-  "file": "File:20250526 berberys Thunberga Berberis thunbergii Panewniki.jpg",
-  "licence": "CC BY 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:20250526_berberys_Thunberga_Berberis_thunbergii_Panewniki.jpg",
+  "detail": {
+   "author": "Eric Polk",
+   "file": "File:Berberis thunbergii f atropurpurea Rose Glow dark leaf.png",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Berberis_thunbergii_f_atropurpurea_Rose_Glow_dark_leaf.png"
+  },
+  "habit": {
+   "author": "Hladac",
+   "file": "File:(ms) Berberis thunbergii 11.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:(ms)_Berberis_thunbergii_11.jpg"
+  },
   "usedBy": [
    "sheet-03-front:BT"
   ]
  },
  "bougainvillea-spectabilis": {
-  "author": "SAplants",
   "botanical": "Bougainvillea spectabilis",
-  "file": "File:Bougainvillea spectabilis (cultivar) 5Dsr 3235.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Bougainvillea_spectabilis_(cultivar)_5Dsr_3235.jpg",
+  "detail": {
+   "author": "\u09aa\u09be\u09aa\u09f0\u09bf \u09ac\u09f0\u09be",
+   "file": "File:Bougainvillea 19.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Bougainvillea_19.jpg"
+  },
+  "habit": {
+   "author": "\u09aa\u09be\u09aa\u09f0\u09bf \u09ac\u09f0\u09be",
+   "file": "File:Bougainvillea (40763).jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Bougainvillea_(40763).jpg"
+  },
   "usedBy": [
    "sheet-04-back:BS"
   ]
  },
  "cerastium-tomentosum": {
-  "author": "Cbaile19",
   "botanical": "Cerastium tomentosum",
-  "file": "File:Cerastium tomentosum, Beechview, 2024-05-12, 01.jpg",
-  "licence": "CC0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Cerastium_tomentosum,_Beechview,_2024-05-12,_01.jpg",
+  "detail": {
+   "author": "Salicyna",
+   "file": "File:Cerastium tomentosum 2023-05-28 6525.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Cerastium_tomentosum_2023-05-28_6525.jpg"
+  },
+  "habit": {
+   "author": "Starglide.bcn",
+   "file": "File:Cerastium tomentosum 02.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Cerastium_tomentosum_02.jpg"
+  },
   "usedBy": [
    "sheet-04-back:CT"
   ]
  },
  "ceratostigma-plumbaginoides": {
-  "author": "Agnes Monkelbaan",
   "botanical": "Ceratostigma plumbaginoides",
-  "file": "File:Ceratostigma plumbaginoides, loodplant. 08-09-2025. (actm.) 01.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Ceratostigma_plumbaginoides,_loodplant._08-09-2025._(actm.)_01.jpg",
+  "detail": {
+   "author": "Denis.pr\u00e9v\u00f4t",
+   "file": "File:Ceratostigma plumbaginoides - Fleurs.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Ceratostigma_plumbaginoides_-_Fleurs.jpg"
+  },
+  "habit": {
+   "author": "Balise42",
+   "file": "File:Ceratostigma plumbaginoides 02.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Ceratostigma_plumbaginoides_02.jpg"
+  },
   "usedBy": [
    "sheet-03-front:CE"
   ]
  },
  "clivia-miniata": {
-  "author": "Bernard DUPONT from FRANCE",
   "botanical": "Clivia miniata",
-  "file": "File:Bush Lily (Clivia miniata) (32985230915).jpg",
-  "licence": "CC BY-SA 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Bush_Lily_(Clivia_miniata)_(32985230915).jpg",
+  "detail": {
+   "author": "JLPC",
+   "file": "File:Clivia FR 2013.jpg",
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Clivia_FR_2013.jpg"
+  },
+  "habit": {
+   "author": "John Robert McPherson",
+   "file": "File:Clivia miniata Van dommele's garden, 20 Pacific Heights Drive, Cumberlum IMGP6580.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Clivia_miniata_Van_dommele%27s_garden,_20_Pacific_Heights_Drive,_Cumberlum_IMGP6580.jpg"
+  },
   "usedBy": [
    "sheet-04-back:CL",
    "sheet-04-back:CM"
   ]
  },
  "clytostoma-callistegioides": {
-  "author": "Daderot",
   "botanical": "Clytostoma callistegioides",
-  "file": "File:Clytostoma callistegioides - Auckland Domain Winter Garden - Auckland, NZ - DSC06995.jpg",
-  "licence": "CC0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Clytostoma_callistegioides_-_Auckland_Domain_Winter_Garden_-_Auckland,_NZ_-_DSC06995.jpg",
+  "detail": {
+   "author": "bri weldon",
+   "file": "File:Clytostoma callistegioides syn Bignonia callistegioides.jpg",
+   "handPicked": true,
+   "licence": "CC BY 2.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Clytostoma_callistegioides_syn_Bignonia_callistegioides.jpg"
+  },
+  "habit": {
+   "author": "Daderot",
+   "file": "File:Clytostoma callistegioides - Auckland Domain Winter Garden - Auckland, NZ - DSC06995.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Clytostoma_callistegioides_-_Auckland_Domain_Winter_Garden_-_Auckland,_NZ_-_DSC06995.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:CC"
+   "sheet-03-front:CC",
+   "sheet-04-back:CC"
   ]
  },
  "coleonema-pulchrum": {
-  "author": "Peripitus",
   "botanical": "Coleonema pulchrum",
-  "file": "File:Coleonema Pulchrum Aurea.jpg",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Coleonema_Pulchrum_Aurea.jpg",
+  "detail": {
+   "author": "Daniel Eijo",
+   "file": "File:Coleonema pulchrum - IES Perdouro (Escaleiras dereita).jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Coleonema_pulchrum_-_IES_Perdouro_(Escaleiras_dereita).jpg"
+  },
+  "habit": {
+   "author": "m.dolores paderne sa\u2026",
+   "file": "File:Alecr\u00edn ( Coleonema pulchrum) - panoramio.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Alecr%C3%ADn_(_Coleonema_pulchrum)_-_panoramio.jpg"
+  },
   "usedBy": [
    "sheet-03-front:CO"
   ]
  },
  "coleonema-pulchrum-sunset-gold": {
-  "author": "cultivar413",
   "botanical": "Coleonema pulchrum 'Sunset Gold'",
-  "file": "File:210205 096 San Diego Botanic Gdn - African Gdn, Sansevieria parva Kenya Hyacinth, Aeonium sp, Coleonema pulchrum 'Sunset Gold'.jpg",
-  "licence": "CC BY 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:210205_096_San_Diego_Botanic_Gdn_-_African_Gdn,_Sansevieria_parva_Kenya_Hyacinth,_Aeonium_sp,_Coleonema_pulchrum_%27Sunset_Gold%27.jpg",
+  "detail": {
+   "author": "Daniel Eijo",
+   "file": "File:Coleonema pulchrum - IES Perdouro (Escaleiras dereita).jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Coleonema_pulchrum_-_IES_Perdouro_(Escaleiras_dereita).jpg"
+  },
+  "habit": {
+   "author": "m.dolores paderne sa\u2026",
+   "file": "File:Alecr\u00edn ( Coleonema pulchrum) - panoramio.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Alecr%C3%ADn_(_Coleonema_pulchrum)_-_panoramio.jpg"
+  },
   "usedBy": [
    "sheet-03-front:CP"
   ]
  },
  "daphne-odora-marginata": {
-  "author": "Photo by David J. Stang",
   "botanical": "Daphne odora 'Marginata'",
-  "file": "File:Daphne odora 1zz.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Daphne_odora_1zz.jpg",
+  "detail": {
+   "author": "Jonathan Billinger",
+   "file": "File:Daphne odora, 'Perfume Princess' - geograph.org.uk - 7967067.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 2.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Daphne_odora,_%27Perfume_Princess%27_-_geograph.org.uk_-_7967067.jpg"
+  },
+  "habit": {
+   "author": "Acabashi",
+   "file": "File:Daphne Odora Capel Manor Enfield London England 01.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Daphne_Odora_Capel_Manor_Enfield_London_England_01.jpg"
+  },
   "usedBy": [
    "sheet-04-back:DO"
   ]
  },
  "dicksonia-antarctica": {
-  "author": "brewbooks from near Seattle, USA",
   "botanical": "Dicksonia antarctica",
-  "file": "File:Dicksonia antarctica (Tasmanian Tree Fern) - Flickr - brewbooks.jpg",
-  "licence": "CC BY-SA 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Dicksonia_antarctica_(Tasmanian_Tree_Fern)_-_Flickr_-_brewbooks.jpg",
+  "detail": {
+   "author": "Wim de Winter",
+   "file": "File:Dicksonia antarctica (sorus).jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Dicksonia_antarctica_(sorus).jpg"
+  },
+  "habit": {
+   "author": "Lmbuga",
+   "file": "File:2025. Dicksonia antarctica. Osmunda regalis. Miscanthus sinensis Andersson. Alameda de Santiago. Galiza-2.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:2025._Dicksonia_antarctica._Osmunda_regalis._Miscanthus_sinensis_Andersson._Alameda_de_Santiago._Galiza-2.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:DA"
+   "sheet-03-front:DA",
+   "sheet-04-back:DA"
   ]
  },
  "dietes-bicolor": {
-  "author": "Michael Rivera",
   "botanical": "Dietes bicolor",
-  "file": "File:Dietes bicolor, Jacksonville Zoo.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Dietes_bicolor,_Jacksonville_Zoo.jpg",
+  "detail": {
+   "author": "salles1",
+   "file": "File:Dietes bicolor (5360604831).jpg",
+   "handPicked": true,
+   "licence": "CC BY 2.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Dietes_bicolor_(5360604831).jpg"
+  },
+  "habit": {
+   "author": "Michael Rivera",
+   "file": "File:Dietes bicolor, Jacksonville Zoo.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Dietes_bicolor,_Jacksonville_Zoo.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:DB"
+   "sheet-03-front:DB",
+   "sheet-04-back:DB"
   ]
  },
  "gelsemium-sempervirens": {
-  "author": "Jim Evans",
   "botanical": "Gelsemium sempervirens",
-  "file": "File:Carolina jessamine shrub -- Gelsemium sempervirens.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Carolina_jessamine_shrub_--_Gelsemium_sempervirens.jpg",
+  "detail": {
+   "author": "H. Solereder?",
+   "file": "File:Gelsemium sempervirens EP-IV2-014.png",
+   "licence": "Public domain",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Gelsemium_sempervirens_EP-IV2-014.png"
+  },
+  "habit": {
+   "author": "Jim Evans",
+   "file": "File:Carolina jessamine shrub -- Gelsemium sempervirens.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Carolina_jessamine_shrub_--_Gelsemium_sempervirens.jpg"
+  },
   "usedBy": [
    "sheet-03-front:GS"
   ]
  },
  "geranium-incanum": {
-  "author": "SAplants",
   "botanical": "Geranium incanum",
-  "file": "File:Geranium incanum 1DS-II 2-4618.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Geranium_incanum_1DS-II_2-4618.jpg",
+  "detail": {
+   "author": "JonRichfield",
+   "file": "File:Geranium incanum 9154s.jpg",
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Geranium_incanum_9154s.jpg"
+  },
+  "habit": {
+   "author": "SAplants",
+   "file": "File:Geranium incanum 5Dsr 1-0254.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Geranium_incanum_5Dsr_1-0254.jpg"
+  },
   "usedBy": [
    "sheet-03-front:GI"
   ]
  },
  "grevillea-noellii": {
-  "author": "Stickpen",
   "botanical": "Grevillea 'Noellii'",
-  "file": "File:Grevilleanoellii.jpg",
-  "licence": "Public domain",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Grevilleanoellii.jpg",
+  "detail": {
+   "author": "Lord.of.the.Proterozoic",
+   "file": "File:Grevillea banyabba flowers.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Grevillea_banyabba_flowers.jpg"
+  },
+  "habit": {
+   "author": "Lord.of.the.Proterozoic",
+   "file": "File:Grevillea caleyi and Lantana camara branches.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Grevillea_caleyi_and_Lantana_camara_branches.jpg"
+  },
   "usedBy": [
    "sheet-03-front:GN"
   ]
  },
  "hardenbergia-vio-happy-wanderer": {
-  "author": "John Robert McPherson",
   "botanical": "Hardenbergia vio. 'Happy Wanderer'",
-  "file": "File:Hardenbergia violacea 74 Sunbury St Geebung L1200850.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_74_Sunbury_St_Geebung_L1200850.jpg",
+  "detail": {
+   "author": "Consultaplantas",
+   "file": "File:Hardenbergia violacea 2c.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_2c.JPG"
+  },
+  "habit": {
+   "author": "Consultaplantas",
+   "file": "File:Hardenbergia violacea 1c.JPG",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_1c.JPG"
+  },
   "usedBy": [
-   "sheet-03-front:HH"
+   "sheet-03-front:HH",
+   "sheet-04-back:HV"
   ]
  },
  "hardenbergia-vio-mini-ha-ha": {
-  "author": "John Robert McPherson",
   "botanical": "Hardenbergia vio. 'Mini Ha Ha'",
-  "file": "File:Hardenbergia violacea 74 Sunbury St Geebung L1200850.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_74_Sunbury_St_Geebung_L1200850.jpg",
+  "detail": {
+   "author": "Consultaplantas",
+   "file": "File:Hardenbergia violacea 2c.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_2c.JPG"
+  },
+  "habit": {
+   "author": "Consultaplantas",
+   "file": "File:Hardenbergia violacea 1c.JPG",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hardenbergia_violacea_1c.JPG"
+  },
   "usedBy": [
    "sheet-03-front:HM"
   ]
  },
  "hemerocallis-aztec-gold": {
-  "author": "James Steakley",
   "botanical": "Hemerocallis 'Aztec Gold'",
-  "file": "File:Hemerocallis 'Aztec Gold'.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Hemerocallis_%27Aztec_Gold%27.jpg",
+  "detail": {
+   "author": "Jim Evans",
+   "file": "File:Double daylily -- Hemerocallis fulva.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Double_daylily_--_Hemerocallis_fulva.jpg"
+  },
+  "habit": {
+   "author": "Dominicus Johannes Bergsma",
+   "file": "File:Daglelie, Hemerocallis. Locatie, Tuinen Mien Ruys.jpg",
+   "isHabit": false,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Daglelie,_Hemerocallis._Locatie,_Tuinen_Mien_Ruys.jpg"
+  },
   "usedBy": [
    "sheet-03-front:HA"
   ]
  },
  "heteromeles-arbutifolia": {
-  "author": "Krzysztof Ziarnek, Kenraiz",
   "botanical": "Heteromeles arbutifolia",
-  "file": "File:Heteromeles arbutifolia 'Davis Gold' kz1.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Heteromeles_arbutifolia_%27Davis_Gold%27_kz1.jpg",
+  "detail": {
+   "author": "John Rusk from Berkeley, CA, United States of America",
+   "file": "File:2015-07-04-13.03.41 ZS PMax Heteromeles arbutifolia-1 (19413464092).jpg",
+   "licence": "CC BY 2.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:2015-07-04-13.03.41_ZS_PMax_Heteromeles_arbutifolia-1_(19413464092).jpg"
+  },
+  "habit": {
+   "author": "Daderot",
+   "file": "File:Heteromeles arbutifolia - Manhattan Beach Botanical Garden - Manhattan Beach, CA - DSC01238.jpg",
+   "isHabit": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Heteromeles_arbutifolia_-_Manhattan_Beach_Botanical_Garden_-_Manhattan_Beach,_CA_-_DSC01238.jpg"
+  },
   "usedBy": [
    "sheet-04-back:HA"
   ]
  },
  "iberis-sempervirens-snowflake": {
-  "author": "Photo by David J. Stang",
   "botanical": "Iberis sempervirens 'Snowflake'",
-  "file": "File:Iberis sempervirens Snowflake 10zz.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Iberis_sempervirens_Snowflake_10zz.jpg",
+  "detail": {
+   "author": "Captainpixel",
+   "file": "File:Iberis sempervirens flower head.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Iberis_sempervirens_flower_head.jpg"
+  },
+  "habit": {
+   "author": "H. Zell",
+   "file": "File:Iberis sempervirens 001.JPG",
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Iberis_sempervirens_001.JPG"
+  },
   "usedBy": [
    "sheet-04-back:IS"
   ]
  },
  "lagerstroemia-x-natchez": {
-  "author": "Calistemon",
   "botanical": "Lagerstroemia X 'Natchez'",
-  "file": "File:Lagerstroemia indica \u00d7 fauriei 'Natchez' in Golden Valley Tree Park, May 2022.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_%C3%97_fauriei_%27Natchez%27_in_Golden_Valley_Tree_Park,_May_2022.jpg",
+  "detail": {
+   "author": "Chihiro H",
+   "file": "File:Lagerstroemia Indica 2017 1 \u30b5\u30eb\u30b9\u30d9\u30ea (222722983).jpeg",
+   "licence": "CC BY 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_Indica_2017_1_%E3%82%B5%E3%83%AB%E3%82%B9%E3%83%99%E3%83%AA_(222722983).jpeg"
+  },
+  "habit": {
+   "author": "Didier Descouens",
+   "file": "File:Lagerstroemia indica MHNT Jardin des Plantes de Toulouse.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_MHNT_Jardin_des_Plantes_de_Toulouse.jpg"
+  },
   "usedBy": [
    "sheet-04-back:LI"
   ]
  },
  "lantana-montevidensis": {
-  "author": "Elucidate (talk)",
   "botanical": "Lantana montevidensis",
-  "file": "File:Lantana montevidensis.JPG",
-  "licence": "CC BY 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Lantana_montevidensis.JPG",
+  "detail": {
+   "author": "MaheSwara",
+   "file": "File:Flower of Lantana montevidensis (Trailing lantana) 2026-02-28 01.jpg",
+   "handPicked": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Flower_of_Lantana_montevidensis_(Trailing_lantana)_2026-02-28_01.jpg"
+  },
+  "habit": {
+   "author": "IndigoTardigrade",
+   "file": "File:Lantana-montevidensis-plants.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Lantana-montevidensis-plants.jpg"
+  },
   "usedBy": [
    "sheet-03-front:LM"
   ]
  },
  "lavatera-thuringiaca-barnsley": {
-  "author": "Stefan.lefnaer",
   "botanical": "Lavatera thuringiaca 'Barnsley'",
-  "file": "File:Lavatera thuringiaca sl23.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Lavatera_thuringiaca_sl23.jpg",
+  "detail": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Lavatera thuringiaca kz01.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Lavatera_thuringiaca_kz01.jpg"
+  },
+  "habit": {
+   "author": "Udo Schr\u00f6ter",
+   "file": "File:Lavatera thuringiaca Uppsala.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 2.5",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Lavatera_thuringiaca_Uppsala.jpg"
+  },
   "usedBy": [
    "sheet-04-back:LT"
   ]
  },
  "leptospermum-sco-gaiety-girl": {
-  "author": "Didier Descouens",
   "botanical": "Leptospermum sco. 'Gaiety Girl'",
-  "file": "File:(MHNT) Leptospermum scoparium 'Burgundy Queen' - Leaves and flower.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Leptospermum_scoparium_%27Burgundy_Queen%27_-_Leaves_and_flower.jpg",
+  "detail": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Leptospermum scoparium 'Gaiety Girl' kz02.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Leptospermum_scoparium_%27Gaiety_Girl%27_kz02.jpg"
+  },
+  "habit": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Leptospermum scoparium 'Gaiety Girl' kz01.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Leptospermum_scoparium_%27Gaiety_Girl%27_kz01.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:LS"
+   "sheet-03-front:LS",
+   "sheet-04-back:LS"
   ]
  },
  "leptospermum-sco-nanum-tui": {
-  "author": "Didier Descouens",
   "botanical": "Leptospermum sco. 'Nanum Tui'",
-  "file": "File:(MHNT) Leptospermum scoparium 'Burgundy Queen' - Leaves and flower.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Leptospermum_scoparium_%27Burgundy_Queen%27_-_Leaves_and_flower.jpg",
+  "detail": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Leptospermum scoparium 'Wiri Donna' kz2.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Leptospermum_scoparium_%27Wiri_Donna%27_kz2.jpg"
+  },
+  "habit": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Leptospermum scoparium 'Jubilee' kz1.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Leptospermum_scoparium_%27Jubilee%27_kz1.jpg"
+  },
   "usedBy": [
    "sheet-03-front:LN"
   ]
  },
  "loropetalum-chinense-razzelberri": {
-  "author": "Didier Descouens",
   "botanical": "Loropetalum chinense 'Razzelberri'",
-  "file": "File:(MHNT) Loropetalum chinense f. rubrum - blossom.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Loropetalum_chinense_f._rubrum_-_blossom.jpg",
+  "detail": {
+   "author": "Didier Descouens",
+   "file": "File:(MHNT) Loropetalum chinense f. rubrum - Flowers and leaves.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Loropetalum_chinense_f._rubrum_-_Flowers_and_leaves.jpg"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Loropetalum chinense 10zz.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Loropetalum_chinense_10zz.jpg"
+  },
   "usedBy": [
    "sheet-04-back:LC"
   ]
  },
  "magnolia-rustica-rubra": {
-  "author": "Krzysztof Ziarnek, Kenraiz",
   "botanical": "Magnolia 'Rustica Rubra'",
-  "file": "File:Magnolia soulangeana 'Rustica Rubra' kz01.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Magnolia_soulangeana_%27Rustica_Rubra%27_kz01.jpg",
+  "detail": {
+   "author": "Pedro Cifuentes",
+   "file": "File:Magnolia soulangeana.jpg",
+   "handPicked": true,
+   "licence": "Public domain",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Magnolia_soulangeana.jpg"
+  },
+  "habit": {
+   "author": "Kroton",
+   "file": "File:Magnolia soulangeana - Lancut - Kroton 001.JPG",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Magnolia_soulangeana_-_Lancut_-_Kroton_001.JPG"
+  },
   "usedBy": [
    "sheet-03-front:MS"
   ]
  },
  "michelia-figo-port-wine": {
-  "author": "Photo by David J. Stang",
   "botanical": "Michelia figo 'Port Wine'",
-  "file": "File:Michelia figo 0zz.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Michelia_figo_0zz.jpg",
+  "detail": {
+   "author": "Sun Jiao (Interaccoonale)",
+   "file": "File:Michelia figo--IMG 20180326 175343.jpg",
+   "handPicked": true,
+   "licence": "CC BY 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Michelia_figo--IMG_20180326_175343.jpg"
+  },
+  "habit": {
+   "author": "Daderot",
+   "file": "File:Magnolia figo (Michelia fuscata) - Zilker Botanical Garden - Austin, Texas - DSC08912.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Magnolia_figo_(Michelia_fuscata)_-_Zilker_Botanical_Garden_-_Austin,_Texas_-_DSC08912.jpg"
+  },
   "usedBy": [
    "sheet-03-front:MF"
   ]
  },
  "myoporum-par-burgandy-carpet": {
-  "author": "cultivar413 from Fallbrook, California",
   "botanical": "Myoporum par. 'Burgandy Carpet'",
-  "file": "File:190307 192 SD Botanic Gdn - Australian Garden, Myoporum parvifolium Creeping Myoporum (40378252173).jpg",
-  "licence": "CC BY 2.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:190307_192_SD_Botanic_Gdn_-_Australian_Garden,_Myoporum_parvifolium_Creeping_Myoporum_(40378252173).jpg",
+  "habit": {
+   "author": "Daderot",
+   "file": "File:Myoporum parvifolium 'Putah Creek' - Mildred E. Mathias Botanical Garden - University of California, Los Angeles - DSC02757.jpg",
+   "isHabit": true,
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Myoporum_parvifolium_%27Putah_Creek%27_-_Mildred_E._Mathias_Botanical_Garden_-_University_of_California,_Los_Angeles_-_DSC02757.jpg"
+  },
   "usedBy": [
    "sheet-03-front:MP"
   ]
  },
  "myrsine-africana": {
-  "author": "Krzysztof Ziarnek, Kenraiz",
   "botanical": "Myrsine africana",
-  "file": "File:Myrsine africana kz01.jpg",
-  "licence": "CC BY 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Myrsine_africana_kz01.jpg",
+  "detail": {
+   "author": "SAplants",
+   "file": "File:Myrsine africana 0327.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Myrsine_africana_0327.jpg"
+  },
+  "habit": {
+   "author": "Abu Shawka (talk)",
+   "file": "File:Myrsine africana - Cape Town.JPG",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "Public domain",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Myrsine_africana_-_Cape_Town.JPG"
+  },
   "usedBy": [
    "sheet-03-front:MA",
-   "sheet-03-front:MY"
+   "sheet-03-front:MY",
+   "sheet-04-back:MA",
+   "sheet-04-back:MY"
   ]
  },
  "nandina-domestica-harbour-dwarf": {
-  "author": "Photo by David J. Stang",
   "botanical": "Nandina domestica 'Harbour Dwarf'",
-  "file": "File:Nandina domestica Harbour Dwarf 0zz.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_Harbour_Dwarf_0zz.jpg",
+  "detail": {
+   "author": "Gmihail at Serbian Wikipedia",
+   "file": "File:Nandina domestica, fruits.jpg",
+   "licence": "CC BY-SA 3.0 rs",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Nandina_domestica,_fruits.jpg"
+  },
+  "habit": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Nandina domestica kz05.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_kz05.jpg"
+  },
   "usedBy": [
    "sheet-03-front:ND"
   ]
  },
  "osmanthus-delavayi": {
-  "author": "Daderot",
   "botanical": "Osmanthus delavayi",
-  "file": "File:Osmanthus delavayi - Quarryhill Botanical Garden - DSC03349.JPG",
-  "licence": "CC0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_delavayi_-_Quarryhill_Botanical_Garden_-_DSC03349.JPG",
+  "detail": {
+   "author": "Kurt St\u00fcber [1]",
+   "file": "File:Osmanthus delavayi0.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_delavayi0.jpg"
+  },
+  "habit": {
+   "author": "Kurt St\u00fcber [1]",
+   "file": "File:Osmanthus delavayi2.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_delavayi2.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:OD"
+   "sheet-03-front:OD",
+   "sheet-04-back:OD"
   ]
  },
  "osmanthus-fragrans": {
-  "author": "Laitr Keiows",
   "botanical": "Osmanthus fragrans",
-  "file": "File:Osmanthus fragrans (orange flowers).jpg",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_(orange_flowers).jpg",
+  "detail": {
+   "author": "\u305d\u3089\u307f\u307f (Soramimi)",
+   "file": "File:Osmanthus fragrans 20151023.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_20151023.JPG"
+  },
+  "habit": {
+   "author": "Emcc83",
+   "file": "File:Osmanthus fragrans(Thunb.)Lour..JPG",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans(Thunb.)Lour..JPG"
+  },
   "usedBy": [
-   "sheet-03-front:OF"
+   "sheet-03-front:OF",
+   "sheet-04-back:OF"
   ]
  },
  "pandorea-jasminoides-rosea": {
-  "author": "Forest &amp; Kim Starr",
   "botanical": "Pandorea jasminoides 'Rosea'",
-  "file": "File:Starr 080117-1632 Pandorea jasminoides.jpg",
-  "licence": "CC BY 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Starr_080117-1632_Pandorea_jasminoides.jpg",
+  "detail": {
+   "author": "Unknown",
+   "file": "File:Pandorea jasminoides LeavesFlowers BotGard0906.JPG",
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pandorea_jasminoides_LeavesFlowers_BotGard0906.JPG"
+  },
+  "habit": {
+   "author": "M108t",
+   "file": "File:Pandorea jasminoides planted in Tropical and Subtropical Arboretum, Ocean Expo Park, Motobu, Okinawa.jpg",
+   "isHabit": true,
+   "licence": "CC BY 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pandorea_jasminoides_planted_in_Tropical_and_Subtropical_Arboretum,_Ocean_Expo_Park,_Motobu,_Okinawa.jpg"
+  },
   "usedBy": [
    "sheet-04-back:PJ"
   ]
  },
  "pennisetum-eaton-canyon": {
-  "author": "Dinesh Valke from Thane, India",
   "botanical": "Pennisetum 'Eaton Canyon'",
-  "file": "File:Fountain grass (405628386).jpg",
-  "licence": "CC BY-SA 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Fountain_grass_(405628386).jpg",
+  "detail": {
+   "author": "Dominicus Johannes Bergsma",
+   "file": "File:Pennisetum alopecuroides (Lampenpoetsersgras) 02.JPG",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pennisetum_alopecuroides_(Lampenpoetsersgras)_02.JPG"
+  },
+  "habit": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Pennisetum setaceum kz01.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pennisetum_setaceum_kz01.jpg"
+  },
   "usedBy": [
    "sheet-03-front:PS"
   ]
  },
  "phorium-gold-sword": {
-  "author": "Yercaud-elango",
   "botanical": "Phorium 'Gold Sword'",
-  "file": "File:Phormium tenax-1-botanical garden-ooty-India.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Phormium_tenax-1-botanical_garden-ooty-India.jpg",
+  "detail": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Phormium tenax 'Variegata' kz01.jpg",
+   "handPicked": true,
+   "licence": "CC BY 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Phormium_tenax_%27Variegata%27_kz01.jpg"
+  },
+  "habit": {
+   "author": "Tony Rebelo",
+   "file": "File:Phormium tenax 126439719.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Phormium_tenax_126439719.jpg"
+  },
   "usedBy": [
    "sheet-03-front:PH"
   ]
  },
  "photinia-x-fraseri": {
-  "author": "Hedwig Storch",
   "botanical": "Photinia x fraseri",
-  "file": "File:Monte (Funchal) - Photinia x fraseri (Glanzmispel 'Red Robin') IMG 2007.JPG",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Monte_(Funchal)_-_Photinia_x_fraseri_(Glanzmispel_%27Red_Robin%27)_IMG_2007.JPG",
+  "detail": {
+   "author": "Yercaud-elango",
+   "file": "File:Photinia fraseri-1-ramboda-Srilanka.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Photinia_fraseri-1-ramboda-Srilanka.jpg"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Photinia x fraseri 1zz.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Photinia_x_fraseri_1zz.jpg"
+  },
   "usedBy": [
    "sheet-04-back:PF"
   ]
  },
  "pittosporum-tenuifolium": {
-  "author": "Don McCulley",
   "botanical": "Pittosporum tenuifolium",
-  "file": "File:Pittosporum tenuifolium 'Irene Paterson' IMG 1947.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_tenuifolium_%27Irene_Paterson%27_IMG_1947.jpg",
+  "detail": {
+   "author": "Sarawawawa",
+   "file": "File:Pittosporum tenuifolium (Kohuhu) capsule.jpg",
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_tenuifolium_(Kohuhu)_capsule.jpg"
+  },
+  "habit": {
+   "author": "Rudolph89",
+   "file": "File:Pittosporum tenuifolium 11.JPG",
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_tenuifolium_11.JPG"
+  },
   "usedBy": [
-   "sheet-03-front:PT"
+   "sheet-03-front:PT",
+   "sheet-04-back:PT"
   ]
  },
  "pittosporum-tobira-variegata": {
-  "author": "cultivar413",
   "botanical": "Pittosporum tobira 'Variegata'",
-  "file": "File:210624 124 San Diego Botanic Gdn - Walled Gdn, Carex divulsa perhaps, Adiantum capillis-veneris Southern Maidenhair Fern, Pittosporum tobira \u2018Dwarf Variegata\u2019, Cedrus deodara 'Feelin' Blue' Dwarf Weeping Deodar Cedar.jpg",
-  "licence": "CC BY 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:210624_124_San_Diego_Botanic_Gdn_-_Walled_Gdn,_Carex_divulsa_perhaps,_Adiantum_capillis-veneris_Southern_Maidenhair_Fern,_Pittosporum_tobira_%E2%80%98Dwarf_Variegata%E2%80%99,_Cedrus_deodara_%27Feelin%27_Blue%27_Dwarf_Weeping_Deodar_Cedar.jpg",
+  "detail": {
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "file": "File:Pittosporum tobira 'Variegata' kz03.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_tobira_%27Variegata%27_kz03.jpg"
+  },
+  "habit": {
+   "author": "Alvesgaspar",
+   "file": "File:Hedge Pittosporum tobira July 2026-1.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hedge_Pittosporum_tobira_July_2026-1.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:PV"
+   "sheet-03-front:PV",
+   "sheet-04-back:PV"
   ]
  },
  "pittosporum-tobira-wheeleri": {
-  "author": "Forest and Kim Starr",
   "botanical": "Pittosporum tobira 'Wheeleri'",
-  "file": "File:Starr-080117-1954-Pittosporum tobira-Wheeleri leaves-Home Depot Nursery Kahului-Maui (24533771819).jpg",
-  "licence": "CC BY 3.0 us",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Starr-080117-1954-Pittosporum_tobira-Wheeleri_leaves-Home_Depot_Nursery_Kahului-Maui_(24533771819).jpg",
+  "detail": {
+   "author": "Georgios Liakopoulos",
+   "file": "File:Pittosporum Tobira (211554843).jpeg",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_Tobira_(211554843).jpeg"
+  },
+  "habit": {
+   "author": "Alvesgaspar",
+   "file": "File:Hedge Pittosporum tobira July 2026-1.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hedge_Pittosporum_tobira_July_2026-1.jpg"
+  },
   "usedBy": [
    "sheet-04-back:PW"
   ]
  },
  "pittosporum-tobira-wheelerii": {
-  "author": "Alvesgaspar",
   "botanical": "Pittosporum tobira 'Wheelerii'",
-  "file": "File:Hedge Pittosporum tobira July 2026-1.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": true,
-  "source": "https://commons.wikimedia.org/wiki/File:Hedge_Pittosporum_tobira_July_2026-1.jpg",
+  "detail": {
+   "author": "Georgios Liakopoulos",
+   "file": "File:Pittosporum Tobira (211554843).jpeg",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pittosporum_Tobira_(211554843).jpeg"
+  },
+  "habit": {
+   "author": "Alvesgaspar",
+   "file": "File:Hedge Pittosporum tobira July 2026-1.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hedge_Pittosporum_tobira_July_2026-1.jpg"
+  },
   "usedBy": [
    "sheet-03-front:PW"
   ]
  },
  "podocarpus-macrophyllus-maki": {
-  "author": "\u56db\u8449\u4ead\u56db\u8ff7",
   "botanical": "Podocarpus macrophyllus 'Maki'",
-  "file": "File:Podocarpus macrophyllus var. maki, Zenshoan.jpg",
-  "licence": "CC0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus_var._maki,_Zenshoan.jpg",
+  "detail": {
+   "author": "Alpsdake",
+   "file": "File:Podocarpus macrophyllus (seed s5).jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus_(seed_s5).jpg"
+  },
+  "habit": {
+   "author": "Greg Hume",
+   "file": "File:Podocarpus macrophyllus.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus.jpg"
+  },
   "usedBy": [
    "sheet-03-front:PM"
   ]
  },
  "pyrus-calleryana-chanticleer": {
-  "author": "Herzi Pinki",
   "botanical": "Pyrus calleryana 'Chanticleer'",
-  "file": "File:Pyrus calleryana, Ansch\u00fctzgasse 4, Vienna.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Pyrus_calleryana,_Ansch%C3%BCtzgasse_4,_Vienna.jpg",
+  "detail": {
+   "author": "Alpsdake",
+   "file": "File:Pyrus calleryana (fruits s5).jpg",
+   "licence": "CC0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pyrus_calleryana_(fruits_s5).jpg"
+  },
+  "habit": {
+   "author": "Bruce Marlin",
+   "file": "File:Pyrus calleryana.JPG",
+   "isHabit": true,
+   "licence": "CC BY 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Pyrus_calleryana.JPG"
+  },
   "usedBy": [
    "sheet-04-back:PC"
   ]
  },
  "rosa-hybrid-tea": {
-  "author": "Arashiyama",
   "botanical": "Rosa 'Hybrid Tea'",
-  "file": "File:Hybrid Tea Rose (Rosa ) 'Flamingo'.jpg",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Hybrid_Tea_Rose_(Rosa_)_%27Flamingo%27.jpg",
+  "detail": {
+   "author": "Arashiyama",
+   "file": "File:Hybrid Tea Rose (Rosa ) 'Peace'.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Hybrid_Tea_Rose_(Rosa_)_%27Peace%27.jpg"
+  },
   "usedBy": [
    "sheet-04-back:R"
   ]
  },
  "rosa-var-noatratum-flower-carpet": {
-  "author": "Anthony Tesselaar",
   "botanical": "Rosa var. noatratum 'Flower Carpet'",
-  "file": "File:Flower Carpet RED in the landscape.JPG",
-  "licence": "CC BY 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Flower_Carpet_RED_in_the_landscape.JPG",
+  "detail": {
+   "author": "Kelvinsong",
+   "file": "File:Rosa 'Flower Carpet Scarlet' 2a.jpg",
+   "handPicked": true,
+   "licence": "CC BY 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Rosa_%27Flower_Carpet_Scarlet%27_2a.jpg"
+  },
+  "habit": {
+   "author": "cultivar413 from Fallbrook, California",
+   "file": "File:CBG Evening Island - Rosa Flower Carpet Pink, Nepeta 'Walker's Low', Allium giganteum 150623 (20325938812).jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY 2.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:CBG_Evening_Island_-_Rosa_Flower_Carpet_Pink,_Nepeta_%27Walker%27s_Low%27,_Allium_giganteum_150623_(20325938812).jpg"
+  },
   "usedBy": [
    "sheet-03-front:RC",
-   "sheet-03-front:RF"
+   "sheet-03-front:RF",
+   "sheet-04-back:RC",
+   "sheet-04-back:RF"
   ]
  },
  "rosmarinus-o-benenden-blue": {
-  "author": "Antonio from Mijas, Espa\u00f1a",
   "botanical": "Rosmarinus o. 'Benenden Blue'",
-  "file": "File:Rosmarinus officinalis closeup of flowers.jpg",
-  "licence": "CC BY-SA 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_closeup_of_flowers.jpg",
+  "detail": {
+   "author": "Roger Culos",
+   "file": "File:Rosmarinus officinalis MHNT.BOT.2008.1.19.jpg",
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_MHNT.BOT.2008.1.19.jpg"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Rosmarinus officinalis Mt 0zz.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_Mt_0zz.jpg"
+  },
   "usedBy": [
    "sheet-04-back:RB"
   ]
  },
  "rosmarinus-o-collingwood-ingram": {
-  "author": "Antonio from Mijas, Espa\u00f1a",
   "botanical": "Rosmarinus o. 'Collingwood Ingram'",
-  "file": "File:Rosmarinus officinalis closeup of flowers.jpg",
-  "licence": "CC BY-SA 2.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_closeup_of_flowers.jpg",
+  "detail": {
+   "author": "Roger Culos",
+   "file": "File:Rosmarinus officinalis MHNT.BOT.2008.1.19.jpg",
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_MHNT.BOT.2008.1.19.jpg"
+  },
+  "habit": {
+   "author": "Photo by David J. Stang",
+   "file": "File:Rosmarinus officinalis Mt 0zz.jpg",
+   "isHabit": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": true,
+   "source": "https://commons.wikimedia.org/wiki/File:Rosmarinus_officinalis_Mt_0zz.jpg"
+  },
   "usedBy": [
    "sheet-03-front:RO"
   ]
  },
  "trachelospermum-jasminoides": {
-  "author": "Carlos Delgado",
   "botanical": "Trachelospermum jasminoides",
-  "file": "File:Autographa gamma en Trachelospermum jasminoides - 01.jpg",
-  "licence": "CC BY-SA 3.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Autographa_gamma_en_Trachelospermum_jasminoides_-_01.jpg",
+  "detail": {
+   "author": "Jim Evans",
+   "file": "File:Confederate Jasmine -- Trachelospermum jasminoides.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Confederate_Jasmine_--_Trachelospermum_jasminoides.jpg"
+  },
+  "habit": {
+   "author": "Contrado (Denis Conrado), Universidade Federal de Lavras, Brazil.",
+   "file": "File:Trachelospermum jasminoides - 01.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY-SA 3.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Trachelospermum_jasminoides_-_01.jpg"
+  },
   "usedBy": [
-   "sheet-03-front:TJ"
+   "sheet-03-front:TJ",
+   "sheet-04-back:TJ",
+   "sheet-04-back:TR"
   ]
  },
  "xylosma-congestum": {
-  "author": "Miwasatoshi",
   "botanical": "Xylosma congestum",
-  "file": "File:Xylosma-congestum-20071001.jpg",
-  "licence": "CC BY-SA 4.0",
-  "showsSpeciesNotCultivar": false,
-  "source": "https://commons.wikimedia.org/wiki/File:Xylosma-congestum-20071001.jpg",
+  "detail": {
+   "author": "Kwameghana(Bright Kwame Ayisi)",
+   "file": "File:Xylosma-congestum.jpg",
+   "handPicked": true,
+   "licence": "CC BY-SA 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Xylosma-congestum.jpg"
+  },
+  "habit": {
+   "author": "Jane Charlen",
+   "file": "File:Xylosma congesta 371548739.jpg",
+   "handPicked": true,
+   "isHabit": true,
+   "licence": "CC BY 4.0",
+   "showsSpeciesNotCultivar": false,
+   "source": "https://commons.wikimedia.org/wiki/File:Xylosma_congesta_371548739.jpg"
+  },
   "usedBy": [
    "sheet-03-front:XC"
   ]

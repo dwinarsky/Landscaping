@@ -73,9 +73,21 @@ export async function loadPlan() {
       p.sheet = s.id;
       p.gap = gaps.get(p.key) || null;
       p.slug = slug(p.botanical);
+      // Two photos answer different questions: the habit shot shows how big
+      // and what shape the plant is, the detail shot shows the flower.
       p.photo = `images/plants/${p.slug}.jpg`;
       p.photoSmall = `images/plants/${p.slug}-sm.jpg`;
-      p.credit = credits[p.slug] || null;
+      p.photoDetail = `images/plants/${p.slug}-detail.jpg`;
+      const cred = credits[p.slug] || null;
+      p.credit = cred?.habit || null;
+      p.creditDetail = cred?.detail || null;
+      // A few species have no whole-plant photo on Commons at all. Show the
+      // close-up as the main image rather than no image, labelled honestly.
+      if (!p.credit && p.creditDetail) {
+        p.photo = p.photoDetail;
+        p.credit = { ...p.creditDetail, isHabit: false };
+        p.creditDetail = null;
+      }
     }
 
     for (const c of callouts) {

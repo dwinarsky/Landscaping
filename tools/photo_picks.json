@@ -1,0 +1,28 @@
+{
+  "_note": "Hand-picked Wikimedia files, chosen by eye from tools/review_photos.py contact sheets. Index numbers refer to images/plants/_review/<species>.png; resolve to file titles via images/plants/_review/_index.json. Keyword scoring cannot tell a plant portrait from a plant label on a stake, so these were picked visually.",
+  "_status": "picks recorded for 16 species; not yet applied by fetch_plant_photos.py",
+  "picks": {
+    "Agapanthus africanus":        { "habit": 11, "detail": 7,  "why": "mass planting along a path shows clump habit and scale" },
+    "Daphne odora":                { "habit": 1,  "detail": 3,  "why": "whole shrub at Capel Manor; was a plant label before" },
+    "Trachelospermum jasminoides": { "habit": 5,  "detail": 2,  "why": "flowering wall of vine; was a label plaque before" },
+    "Podocarpus macrophyllus":     { "habit": 0,  "detail": 9,  "why": "full dense shrub; was a nursery yard before" },
+    "Lavatera thuringiaca":        { "habit": 1,  "detail": 2,  "why": "full bushy plant in flower; was a field vista before" },
+    "Leptospermum scoparium":      { "habit": 5,  "detail": 6,  "why": "#5 IS the 'Gaiety Girl' cultivar on the plan" },
+    "Leptospermum scoparium (LN)": { "habit": 7,  "detail": 9,  "why": "pink form, closer to dwarf 'Nanum Tui'" },
+    "Rosa Flower Carpet":          { "habit": 0,  "detail": 7,  "why": "mass planting shows the groundcover sweep" },
+    "Pennisetum":                  { "habit": 10, "detail": 3,  "why": "arching clump; was one seedhead on decking" },
+    "Phormium tenax":              { "habit": 10, "detail": 7,  "why": "big garden clump; detail shows variegated striping" },
+    "Osmanthus fragrans":          { "habit": 4,  "detail": 11, "why": "whole tree; #0-#2 were dried osmanthus tea" },
+    "Cerastium tomentosum":        { "habit": 1,  "detail": 5,  "why": "the white carpet the common name refers to" },
+    "Pittosporum tobira":          { "habit": 0,  "detail": 3,  "why": "clipped hedge, how it is used on this plan" },
+    "Pittosporum tobira (PV)":     { "habit": 0,  "detail": 6,  "why": "detail #6 shows the variegated foliage" },
+    "Xylosma congestum":           { "habit": 8,  "detail": 0,  "why": "best available; no true habit shot on Commons" },
+    "Myrsine africana":            { "habit": 3,  "detail": 7,  "why": "dense shrub showing boxwood texture" },
+    "Hardenbergia violacea":       { "habit": 5,  "detail": 6,  "why": "flowering mound; was a car park before" },
+    "Michelia figo":               { "habit": 0,  "detail": 6,  "why": "whole shrub" },
+    "Rosa hybrid tea":             { "habit": null, "detail": 4, "why": "no bush shot exists in the pool; flower only" }
+  },
+  "_still_unresolved": {
+    "Magnolia 'Rustica Rubra'": "search term 'Magnolia' was too generic and matched the town of Magnolia, Iowa. Needs 'Magnolia soulangeana' - Rustica Rubra is a M. x soulangeana cultivar."
+  }
+}
