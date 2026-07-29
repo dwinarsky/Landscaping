@@ -41,7 +41,6 @@ class App {
       input: $("#search-input"), results: $("#search-results"), app: this,
     });
 
-    this._applyIdentity();
     this._buildSheetPicker();
     this._bindControls();
 
@@ -56,17 +55,6 @@ class App {
     else if (key && this.sheet.plantByKey.has(key)) this.showPlant(key);
 
     if (isEditing()) this._startEditor();
-  }
-
-  /** Whose plan this is comes from the data, not from index.html.
-   *  On the locked deploy index.html is served in the clear, so it must not
-   *  name the property; the header and tab title are filled in here once the
-   *  plan has actually been decrypted. */
-  _applyIdentity() {
-    const { project, address } = this.plan.meta;
-    $("#topbar-project").textContent = project;
-    $("#topbar-addr").textContent = address;
-    document.title = `${project} — ${address}`;
   }
 
   /* ------------------------------------------------------------- sheets */

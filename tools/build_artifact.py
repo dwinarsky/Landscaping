@@ -151,7 +151,7 @@ def main() -> int:
 
     html = html.replace('<link rel="stylesheet" href="css/app.css">',
                         f"<style>\n{css}\n</style>")
-    html = html.replace('<script type="module" src="js/boot.js"></script>',
+    html = html.replace('<script type="module" src="js/app.js"></script>',
                         head + f"\n<script>\n{bundle}\n</script>")
 
     DIST.mkdir(exist_ok=True)
