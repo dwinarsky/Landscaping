@@ -44,6 +44,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # spends about a second on it once per unlock.
 ITERATIONS = 600_000
 
+# Hard floor, and the length below which the build says it is uneasy.
+MIN_PASSPHRASE = 8
+COMFORTABLE_PASSPHRASE = 16
+
 # Everything under these is served but left readable.
 PUBLIC = ("index.html", "css", "js", "images/plants", ".nojekyll")
 
@@ -91,8 +95,19 @@ def main() -> int:
     passphrase = args.passphrase or os.environ.get("SITE_PASSPHRASE")
     if not passphrase:
         passphrase = getpass.getpass("Passphrase: ")
-    if len(passphrase) < 8:
-        raise SystemExit("passphrase must be at least 8 characters")
+    # There is no server to rate-limit guesses: the ciphertext is public, so an
+    # attacker grinds offline at hardware speed. Length is the only defence.
+    if len(passphrase) < MIN_PASSPHRASE:
+        raise SystemExit(
+            f"Passphrase is {len(passphrase)} characters; at least "
+            f"{MIN_PASSPHRASE} are required.\n"
+            "  Nothing rate-limits guesses here - the encrypted files are public,\n"
+            "  so a short passphrase can be cracked offline. Use four or five\n"
+            "  random words, e.g. copper-thistle-lantern-drift.\n"
+            "  Update the SITE_PASSPHRASE repository secret and re-run the deploy.")
+    if len(passphrase) < COMFORTABLE_PASSPHRASE:
+        print(f"  NOTE: {len(passphrase)} characters is on the short side for a "
+              f"passphrase an attacker can grind at offline; consider more.")
 
     out = pathlib.Path(args.out)
     if out.exists():
