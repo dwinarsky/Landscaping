@@ -160,9 +160,57 @@ Other URL parameters, all shareable:
 Drop a file at `images/plants/<species-slug>-mine.jpg` and the app prefers it over the Wikimedia
 one — handy for photographing what is actually growing in the garden now.
 
+## The site is passphrase-locked
+
+GitHub Pages serves publicly even when the repository is private - private Pages is an
+Enterprise-only feature. Before this was added, `curl` on the deployed `data/meta.json` returned the
+street address with no prompt at all. A password box in JavaScript would not have fixed that: it
+hides the interface while leaving every JSON file and blueprint scan one URL away.
+
+So the private files are encrypted at build time and only ciphertext is deployed.
+`tools/encrypt_site.py` derives a key from the passphrase with PBKDF2-HMAC-SHA256 (600,000
+iterations) and encrypts each file with AES-256-GCM. `js/lock.js` asks for the passphrase, derives
+the same key with Web Crypto and decrypts in the browser. The server never holds anything readable.
+
+| | |
+|---|---|
+| Encrypted | all of `data/`, both rectified blueprint scans, every per-area crop of them |
+| Public | `index.html`, the CSS and JS, and the plant photographs - public Wikimedia images that say nothing about the property |
+| Not deployed at all | `images/source/`, `tools/`, and the detector's working files |
+
+`index.html` is served in the clear, so it deliberately names no property: the tab title is just
+"Landscape Plan" until the plan is decrypted, at which point `app.js` fills in the real title and
+header from the data. The workflow greps the built site for property details and fails the deploy
+if it finds any.
+
+### Setting or changing the passphrase
+
+Set a repository secret named `SITE_PASSPHRASE` (Settings > Secrets and variables > Actions). The
+deploy **fails** if it is missing rather than publishing in the clear. Changing it is the same
+action followed by a re-run of the workflow; every visitor is then locked out until you give them
+the new one.
+
+### What this does and does not protect
+
+- It is real encryption, not a hidden interface. Without the passphrase the deployed bytes are
+  useless.
+- Its strength is the strength of the passphrase. The ciphertext is public, so an attacker can
+  grind at it offline. 600,000 PBKDF2 iterations makes each guess expensive, but a short or
+  guessable passphrase is still a short passphrase. Use several random words.
+- It is one shared secret. There are no accounts, so access cannot be revoked from one person
+  without changing it for everyone.
+- Anyone who unlocks it can save what they see. This keeps the plan off the open internet; it does
+  not stop someone you gave the passphrase to from passing it on.
+- "Remember on this device" stores the derived key in `localStorage`, so a shared or lost phone
+  stays unlocked. Clear site data to undo it.
+
+If you ever want per-person access instead, host the same repo on Cloudflare Pages and put
+Cloudflare Access in front: you list emails, each person gets a one-time code, and there is no
+shared secret.
+
 ## Deploying
 
-Live at **https://dwinarsky.github.io/Landscaping/**.
+Live at **https://dwinarsky.github.io/Landscaping/** (passphrase required).
 
 `.github/workflows/pages.yml` validates the data and publishes the repository root to GitHub Pages
 (Pages source is set to "GitHub Actions"). Every push deploys, and the validation step gates the

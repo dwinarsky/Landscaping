@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
-# The site is plain static files - no build step - so this just uploads the
-# repository root. Set Pages source to "GitHub Actions" in the repository
-# settings once and every push to these branches publishes.
+# GitHub Pages is public even when the repository is private, so the site is
+# encrypted before it is uploaded (tools/encrypt_site.py) and only ciphertext
+# is ever deployed. The passphrase comes from the SITE_PASSPHRASE repository
+# secret and is never written to the repo.
 
 on:
   push:
@@ -42,9 +43,46 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Refuse to deploy rather than publish the plan in the clear. Set the
+      # secret at Settings > Secrets and variables > Actions > New repository
+      # secret, named SITE_PASSPHRASE.
+      - name: Require the passphrase
+        env:
+          SITE_PASSPHRASE: ${{ secrets.SITE_PASSPHRASE }}
+        run: |
+          if [ -z "$SITE_PASSPHRASE" ]; then
+            echo "::error::SITE_PASSPHRASE secret is not set. Refusing to deploy," \
+                 "because that would publish the plan and the address in plain text."
+            exit 1
+          fi
+
+      - name: Install build dependencies
+        run: python3 -m pip install --quiet cryptography
+
+      - name: Encrypt the site
+        env:
+          SITE_PASSPHRASE: ${{ secrets.SITE_PASSPHRASE }}
+        run: python3 tools/encrypt_site.py --out dist/site
+
+      # Belt and braces: prove the built site carries no readable copy of the
+      # private data before it goes anywhere.
+      - name: Verify nothing readable escaped
+        run: |
+          if grep -ril "ten oak\|pearson\|saratoga\|landworks" dist/site \
+               | grep -v '\.enc$'; then
+            echo "::error::plaintext property details found in the build output"
+            exit 1
+          fi
+          test ! -f dist/site/data/meta.json
+          echo "build contains only ciphertext for the private files"
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist/site
       - id: deployment
         uses: actions/deploy-pages@v4

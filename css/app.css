@@ -1,5 +1,7 @@
 /* ==========================================================================
-   Pearson Residence landscape plan - interactive map
+   Interactive landscape plan - stylesheet
+
+   Served in the clear on the locked deploy, so it names no property.
 
    Palette is taken from the plan itself. The accent is agapanthus blue-violet,
    the most-planted thing in the whole design (66 plants across both sheets).
@@ -831,3 +833,120 @@ figure.p-fig a { color: var(--text-dim); }
 .credits { font-size: 11px; line-height: 1.5; color: var(--text-faint); }
 .credits li { margin-bottom: 5px; }
 .credits a { color: var(--text-dim); }
+
+/* ------------------------------------------------------------- lock screen */
+
+/* Shown only on the encrypted deploy, while the plan is still ciphertext.
+   Same violet-biased palette as the map so unlocking feels like the front
+   door of the same building rather than a bolted-on interstitial. */
+
+.lock {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(120% 80% at 50% 0%, var(--accent-wash), #0000 62%),
+    var(--paper);
+  transition: opacity 320ms ease;
+}
+.lock.is-open { opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .lock { transition: none; } }
+
+.lock-card {
+  width: min(370px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 26px 24px 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+}
+
+.lock-mark {
+  width: 34px;
+  height: 34px;
+  color: var(--accent);
+  stroke-width: 2.2;
+  margin-bottom: 2px;
+}
+
+.lock-card h1 {
+  font-size: 19px;
+  font-weight: 640;
+  letter-spacing: -0.012em;
+  margin: 0;
+}
+
+.lock-sub {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--text-faint);
+  margin: 0 0 6px;
+}
+
+.lock-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.lock-card input[type="password"] {
+  font: inherit;
+  font-size: 16px;               /* 16px stops iOS zooming the page on focus */
+  color: var(--text);
+  background: var(--card-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.lock-card input[type="password"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.lock-remember {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+
+.lock-go {
+  appearance: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 14px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+.lock-go:hover:not(:disabled) { filter: brightness(1.08); }
+.lock-go:disabled { opacity: 0.6; cursor: default; }
+@media (prefers-color-scheme: dark) { .lock-go { color: #14151c; } }
+:root[data-theme="dark"] .lock-go { color: #14151c; }
+:root[data-theme="light"] .lock-go { color: #fff; }
+
+.lock-msg {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-dim);
+  margin: 2px 0 0;
+  min-height: 1.2em;
+}
+.lock-msg.is-bad { color: #c0392b; }
+@media (prefers-color-scheme: dark) { .lock-msg.is-bad { color: #f08a7d; } }
+:root[data-theme="dark"] .lock-msg.is-bad { color: #f08a7d; }
