@@ -160,6 +160,26 @@ Other URL parameters, all shareable:
 Drop a file at `images/plants/<species-slug>-mine.jpg` and the app prefers it over the Wikimedia
 one — handy for photographing what is actually growing in the garden now.
 
+## One file you can keep and pass on
+
+`landscape-plan.html` is the whole map as a single self-contained file: both blueprints, every
+photo and all the data inlined, no network needed to open it. Download it from the About panel in
+the app, or straight from
+**https://dwinarsky.github.io/Landscaping/landscape-plan.html**.
+
+It is genuinely offline - opened from a phone's downloads folder with no signal it still pans,
+zooms, searches and shows every photo. Email it, AirDrop it, put it on a USB stick; whoever opens
+it needs nothing but a browser.
+
+Rebuild it after any change to the data or photos:
+
+```sh
+python3 tools/build_artifact.py --out landscape-plan.html \
+  --plan-width 1500 --zone-width 500 --photo-width 270 --detail-width 190
+```
+
+Those widths hold it near 3.5 MB. Raise them for a sharper copy and a bigger file.
+
 ## Deploying
 
 Live at **https://dwinarsky.github.io/Landscaping/**.

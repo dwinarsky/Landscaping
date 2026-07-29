@@ -50,6 +50,8 @@ def shrink(path: pathlib.Path, max_w: int, quality: int) -> bytes:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="dist/artifact.html",
+                    help="where to write the single file")
     ap.add_argument("--max-mb", type=float, default=4.0)
     ap.add_argument("--plan-width", type=int, default=2048)
     ap.add_argument("--photo-width", type=int, default=300)
@@ -154,8 +156,9 @@ def main() -> int:
     html = html.replace('<script type="module" src="js/app.js"></script>',
                         head + f"\n<script>\n{bundle}\n</script>")
 
-    DIST.mkdir(exist_ok=True)
-    out = DIST / "artifact.html"
+    out = ROOT / args.out if not pathlib.Path(args.out).is_absolute() \
+        else pathlib.Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
 
     mb = out.stat().st_size / 1024 / 1024

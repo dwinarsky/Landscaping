@@ -11,6 +11,9 @@
  */
 
 const INLINE = typeof window !== "undefined" ? window.__PLAN_DATA__ : null;
+
+/** True when running as the self-contained single file. */
+export const IS_BUNDLE = !!INLINE;
 const ASSETS = (typeof window !== "undefined" && window.__PLAN_ASSETS__) || null;
 
 /** Resolve a repo-relative asset path, honouring an inlined asset map.

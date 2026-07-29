@@ -761,6 +761,9 @@ figure.p-fig a { color: var(--text-dim); }
 
 .p-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
 
+/* .btn is used on <button> and on the download <a>, so reset both. */
+a.btn { text-decoration: none; display: inline-block; }
+
 .btn {
   appearance: none;
   font: inherit;

@@ -6,8 +6,11 @@
  * designer's spec is never confused with my commentary.
  */
 
-import { asset, bboxOf } from "./data.js";
+import { asset, bboxOf, IS_BUNDLE } from "./data.js";
 import { esc } from "./util.js";
+
+/** The whole map as one file you can keep, send on, or use with no signal. */
+const OFFLINE_FILE = "landscape-plan.html";
 
 const TYPE_LABEL = {
   tree: "Trees", shrub: "Shrubs", vine: "Vines", perennial: "Perennials",
@@ -337,6 +340,20 @@ export class Panel {
 
       <h3 class="p-sub">Notes on the original sheet</h3>
       ${meta.planNotes.map((n) => `<p class="p-note">${esc(n)}</p>`).join("")}
+
+      ${IS_BUNDLE ? `
+        <h3 class="p-sub">This copy</h3>
+        <p class="p-desc">You are looking at the single-file copy. Everything &mdash; both
+          blueprints, every photo, all the data &mdash; is inside this one file, so it
+          works with no signal at all. Keep it, or send it on to anyone.</p>`
+      : `
+        <h3 class="p-sub">Take it with you</h3>
+        <p class="p-desc">The whole map also comes as one self-contained file. Nothing is
+          fetched when you open it, so it works with no signal &mdash; useful at the far end
+          of the garden &mdash; and you can email or AirDrop it to anyone who wants a copy.</p>
+        <div class="p-actions">
+          <a class="btn primary" href="${esc(OFFLINE_FILE)}" download>Download the offline copy</a>
+        </div>`}
 
       <h3 class="p-sub">How to use it</h3>
       <p class="p-desc">Drag to pan and pinch or scroll to zoom. Tap a shaded area for the
