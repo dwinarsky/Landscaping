@@ -163,9 +163,8 @@ one — handy for photographing what is actually growing in the garden now.
 ## One file you can keep and pass on
 
 `landscape-plan.html` is the whole map as a single self-contained file: both blueprints, every
-photo and all the data inlined, no network needed to open it. Download it from the About panel in
-the app, or straight from
-**https://dwinarsky.github.io/Landscaping/landscape-plan.html**.
+photo and all the data inlined, no network needed to open it. It sits at the root of this
+repository — download it from there, or from the About panel when running the site locally.
 
 It is genuinely offline - opened from a phone's downloads folder with no signal it still pans,
 zooms, searches and shows every photo. Email it, AirDrop it, put it on a USB stick; whoever opens
@@ -180,17 +179,22 @@ python3 tools/build_artifact.py --out landscape-plan.html \
 
 Those widths hold it near 3.5 MB. Raise them for a sharper copy and a bigger file.
 
-## Deploying
+## This is not published anywhere
 
-Live at **https://dwinarsky.github.io/Landscaping/**.
+It was on GitHub Pages briefly and is not any more. Pages serves **publicly whatever the
+repository's visibility** — private Pages is a GitHub Enterprise feature — and this map is centred
+on a private home with the address in its title.
 
-`.github/workflows/pages.yml` validates the data and publishes the repository root to GitHub Pages
-(Pages source is set to "GitHub Actions"). Every push deploys, and the validation step gates the
-deploy so a broken transcription cannot ship.
+So there is no public URL. Use it one of two ways:
 
-`.nojekyll` matters: without it Pages runs the repository through Jekyll, which silently drops
-every file whose name starts with `_` — including the `_callout-candidates.json` that
-`build_callouts.py` indexes into. Nothing at runtime loads those, but the 404s are confusing.
+- `landscape-plan.html` — the single self-contained file above. Hand it to whoever should have it.
+- Run it locally with `python3 -m http.server 8000` for the full version, editor mode included.
+
+`.github/workflows/pages.yml` therefore has **no deploy job**, only the data checksum gate. That is
+deliberate: a deploy step left in it would put the address back on the open internet on the next
+push, silently.
+
+`.nojekyll` is a leftover from that period. Harmless, and correct again if Pages is ever re-enabled.
 
 ## Plant photos
 
