@@ -66,6 +66,18 @@
   </div>
 
   <p class="hint" id="hint">Tap an area of the plan, or a hexagon, to see what is planted there.</p>
+
+  <!-- Visible until the script runs and removes it. The map is drawn entirely in
+       JavaScript, so if scripts are blocked - notably inside an app's built-in
+       file preview, which often strips them - every other element still renders
+       and the result is a mystifying blank page. This says what happened. -->
+  <div class="bootmsg" id="bootmsg">
+    <h2>This page needs JavaScript</h2>
+    <p>The plan is drawn in the browser, so nothing appears without it.</p>
+    <p>If you are looking at this inside an app's file preview, save the file and
+       open it in a real browser - Safari, Chrome or Firefox - instead. Previews
+       often strip scripts for safety.</p>
+  </div>
 </main>
 
 <aside class="panel" id="panel" aria-live="polite">

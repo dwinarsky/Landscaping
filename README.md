@@ -170,6 +170,11 @@ It is genuinely offline - opened from a phone's downloads folder with no signal 
 zooms, searches and shows every photo. Email it, AirDrop it, put it on a USB stick; whoever opens
 it needs nothing but a browser.
 
+**Open it in a real browser, not an app's file preview.** The map is drawn in JavaScript, and the
+preview panes built into mail and chat apps commonly strip scripts. Everything else still renders,
+so the result used to be a blank page with no explanation. The page now detects this and says what
+to do, but the fix is the same: save the file, then open it in Safari, Chrome or Firefox.
+
 Rebuild it after any change to the data or photos:
 
 ```sh

@@ -452,6 +452,26 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 }
 .hint[hidden] { display: block; opacity: 0; pointer-events: none; }
 
+/* Removed synchronously by app.js, so it is only ever seen if the script did
+   not run at all. Sized generously - it is the whole page when it shows. */
+.bootmsg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: min(88vw, 420px);
+  padding: 22px 24px;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+}
+.bootmsg h2 { margin: 0 0 10px; font-size: 17px; }
+.bootmsg p { margin: 0 0 9px; font-size: 14px; line-height: 1.55; color: var(--text-dim); }
+.bootmsg p:last-child { margin-bottom: 0; }
+
 /* ---------------------------------------------------------------- panel */
 
 .scrim {

@@ -1,6 +1,6 @@
 /* Bootstrap and the wiring between map, panel and URL. */
 
-import { loadPlan, asset, bboxOf } from "./data.js";
+import { loadPlan, asset, bboxOf, IS_BUNDLE } from "./data.js";
 import { Viewer } from "./viewer.js";
 import { Hotspots } from "./hotspots.js";
 import { Panel } from "./panel.js";
@@ -269,13 +269,23 @@ class App {
   }
 }
 
+// Synchronously, before any async work: reaching this line proves scripts run,
+// so the "needs JavaScript" notice has done its job and would otherwise sit on
+// top of the map. Failures after this point are reported by the catch below.
+document.getElementById("bootmsg")?.remove();
+
 const app = new App();
 app.start().catch((err) => {
   console.error(err);
+  // The single-file build carries its data inline, so "serve it over HTTP"
+  // would be misleading advice there - it is already self-contained.
+  const advice = IS_BUNDLE
+    ? "This copy has its data built in, so this is a bug rather than a missing file."
+    : "If you opened this file directly, serve the folder over HTTP instead "
+      + "(<code>python3 -m http.server</code>).";
   document.body.insertAdjacentHTML("afterbegin",
     `<p style="position:fixed;inset:auto 12px 12px;z-index:99;margin:0;padding:12px 14px;
        background:#fff;color:#8c2f20;border:1px solid #e0b9b1;border-radius:10px;
        font:14px/1.5 system-ui">Could not load the plan data: ${err.message}.
-       If you opened this file directly, serve the folder over HTTP instead
-       (<code>python3 -m http.server</code>).</p>`);
+       ${advice}</p>`);
 });

@@ -461,6 +461,26 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 }
 .hint[hidden] { display: block; opacity: 0; pointer-events: none; }
 
+/* Removed synchronously by app.js, so it is only ever seen if the script did
+   not run at all. Sized generously - it is the whole page when it shows. */
+.bootmsg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: min(88vw, 420px);
+  padding: 22px 24px;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+}
+.bootmsg h2 { margin: 0 0 10px; font-size: 17px; }
+.bootmsg p { margin: 0 0 9px; font-size: 14px; line-height: 1.55; color: var(--text-dim); }
+.bootmsg p:last-child { margin-bottom: 0; }
+
 /* ---------------------------------------------------------------- panel */
 
 .scrim {
@@ -904,6 +924,18 @@ a.btn { text-decoration: none; display: inline-block; }
   </div>
 
   <p class="hint" id="hint">Tap an area of the plan, or a hexagon, to see what is planted there.</p>
+
+  <!-- Visible until the script runs and removes it. The map is drawn entirely in
+       JavaScript, so if scripts are blocked - notably inside an app's built-in
+       file preview, which often strips them - every other element still renders
+       and the result is a mystifying blank page. This says what happened. -->
+  <div class="bootmsg" id="bootmsg">
+    <h2>This page needs JavaScript</h2>
+    <p>The plan is drawn in the browser, so nothing appears without it.</p>
+    <p>If you are looking at this inside an app's file preview, save the file and
+       open it in a real browser - Safari, Chrome or Firefox - instead. Previews
+       often strip scripts for safety.</p>
+  </div>
 </main>
 
 <aside class="panel" id="panel" aria-live="polite">
@@ -2347,15 +2379,25 @@ class App {
   }
 }
 
+// Synchronously, before any async work: reaching this line proves scripts run,
+// so the "needs JavaScript" notice has done its job and would otherwise sit on
+// top of the map. Failures after this point are reported by the catch below.
+document.getElementById("bootmsg")?.remove();
+
 const app = new App();
 app.start().catch((err) => {
   console.error(err);
+  // The single-file build carries its data inline, so "serve it over HTTP"
+  // would be misleading advice there - it is already self-contained.
+  const advice = IS_BUNDLE
+    ? "This copy has its data built in, so this is a bug rather than a missing file."
+    : "If you opened this file directly, serve the folder over HTTP instead "
+      + "(<code>python3 -m http.server</code>).";
   document.body.insertAdjacentHTML("afterbegin",
     `<p style="position:fixed;inset:auto 12px 12px;z-index:99;margin:0;padding:12px 14px;
        background:#fff;color:#8c2f20;border:1px solid #e0b9b1;border-radius:10px;
        font:14px/1.5 system-ui">Could not load the plan data: ${err.message}.
-       If you opened this file directly, serve the folder over HTTP instead
-       (<code>python3 -m http.server</code>).</p>`);
+       ${advice}</p>`);
 });
 
 </script>
