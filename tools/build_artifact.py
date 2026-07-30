@@ -53,6 +53,8 @@ def main() -> int:
     ap.add_argument("--out", default="dist/artifact.html",
                     help="where to write the single file")
     ap.add_argument("--max-mb", type=float, default=4.0)
+    ap.add_argument("--fragment", action="store_true",
+                    help="emit body content only, for publishing as an Artifact")
     ap.add_argument("--plan-width", type=int, default=2048)
     ap.add_argument("--photo-width", type=int, default=300)
     ap.add_argument("--zone-width", type=int, default=620)
@@ -156,16 +158,32 @@ def main() -> int:
     html = html.replace('<script type="module" src="js/app.js"></script>',
                         head + f"\n<script>\n{bundle}\n</script>")
 
+    if args.fragment:
+        # The Artifact publisher supplies its own <!doctype>/<head>/<body>, so a
+        # complete document here would be nested inside one. Browsers recover
+        # from that, but the outer <title> wins and our viewport meta - parsed
+        # in <body> - is dropped, which matters on a phone. Emit just the parts
+        # that belong inside a body instead, and pass the title to the tool.
+        style = re.search(r"<style>.*?</style>", html, re.S)
+        body = re.search(r"<body[^>]*>(.*)</body>", html, re.S)
+        if not style or not body:
+            raise SystemExit("--fragment: could not find the <style> or <body> to extract")
+        html = f"{style.group(0)}\n{body.group(1).strip()}\n"
+
     out = ROOT / args.out if not pathlib.Path(args.out).is_absolute() \
         else pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
 
     mb = out.stat().st_size / 1024 / 1024
+    try:
+        shown = out.relative_to(ROOT)
+    except ValueError:
+        shown = out                      # --out may point outside the repo
     print(f"  plan rasters : {budget['plan'] / 1024:7.0f} KB")
     print(f"  zone crops   : {budget['zones'] / 1024:7.0f} KB")
     print(f"  plant photos : {budget['plants'] / 1024:7.0f} KB ({len(seen)} species)")
-    print(f"  -> {out.relative_to(ROOT)}  {mb:.2f} MB")
+    print(f"  -> {shown}  {mb:.2f} MB")
     if mb > args.max_mb:
         print(f"  !! over the {args.max_mb} MB budget - lower --plan-width or --photo-width")
         return 1
