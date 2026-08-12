@@ -1291,7 +1291,11 @@ class Viewer {
       // here would retarget the following click to the map, so the buttons
       // would never fire - leave chrome alone and only pan from the plan.
       if (e.target.closest(".mapctl, .hint")) return;
-      map.setPointerCapture(e.pointerId);
+      // Deliberately not capturing yet. A captured pointer makes the browser
+      // fire the following click at the capture element, so capturing here
+      // would send every tap to the map and the zone and marker handlers would
+      // never run - the same retargeting the .mapctl guard above avoids.
+      // Capture happens in pointermove, once this is definitely a drag.
       this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       this.moved = false;
       if (this.pointers.size === 2) {
@@ -1326,12 +1330,24 @@ class Viewer {
           this._apply(s, mx - (mx - this.tx) * k, my - (my - this.ty) * k, false);
         }
         this.moved = true;
+        this._capture(e.pointerId);
         return;
       }
 
-      if (Math.abs(dx) + Math.abs(dy) > 2) this.moved = true;
+      if (Math.abs(dx) + Math.abs(dy) > 2) {
+        this.moved = true;
+        // Now that it is a drag, capture so panning survives the pointer
+        // leaving the map. A tap never reaches here, so its click is intact.
+        this._capture(e.pointerId);
+      }
       this._apply(this.scale, this.tx + dx, this.ty + dy, false);
     });
+
+    this._capture = (id) => {
+      if (map.hasPointerCapture(id)) return;
+      // The pointer can be gone already if the gesture ended mid-move.
+      try { map.setPointerCapture(id); } catch { /* nothing to capture */ }
+    };
 
     const release = (e) => {
       this.pointers.delete(e.pointerId);
